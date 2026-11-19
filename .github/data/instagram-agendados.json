@@ -33681,5 +33681,114 @@
         "publicaEmBR": "19/11 às 19h31"
       }
     }
+  },
+  "loop-vender-o-parado-nunca-faca": {
+    "midias": {
+      "video": {
+        "id": "95f9d63a-8e40-46b7-8c32-fd2eccc85bad",
+        "name": "DingmUKKaG.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/DingmUKKaG.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "d0c46a79-f784-4fdc-9dfb-173263d49e35",
+        "name": "g6qYcYtV8D.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/g6qYcYtV8D.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "a4e3b26b-d6c5-45b9-ae96-3c86bbcef7c2",
+        "name": "8NTcVeyvTS.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/8NTcVeyvTS.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-20T13:00:00.000Z",
+    "publicaEmBR": "20/11 às 10h00",
+    "agendadoEm": "2026-11-19T19:16:57.060Z",
+    "atualizadoEm": "2026-11-19T19:17:01.740Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmwnxlx0u0020ljdmxt6ejhtw",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-20T13:00:00.000Z",
+        "publicaEmBR": "20/11 às 10h00",
+        "midia": "o vídeo",
+        "caracteres": 596,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmwnxlxee0021ljdm3b3gy0zx",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-20T13:12:00.000Z",
+        "publicaEmBR": "20/11 às 10h12",
+        "midia": "o vídeo",
+        "caracteres": 233,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmwnxlxw40022ljdmyx7qubva",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-20T13:26:00.000Z",
+        "publicaEmBR": "20/11 às 10h26",
+        "midia": "o vídeo",
+        "caracteres": 367,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmwnxlydb0023ljdmb7edvz1m",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-20T13:43:00.000Z",
+        "publicaEmBR": "20/11 às 10h43",
+        "midia": "o vídeo",
+        "caracteres": 373,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmwnxlypc0024ljdmxmyprx7z",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-20T13:58:00.000Z",
+        "publicaEmBR": "20/11 às 10h58",
+        "midia": "o vídeo",
+        "caracteres": 121,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmwnxlzl10025ljdm170ue9am",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-20T14:31:00.000Z",
+        "publicaEmBR": "20/11 às 11h31",
+        "midia": "vídeo primeiro, capa depois: a ordem que o Pinterest exige",
+        "caracteres": 337,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmwnxm01k0026ljdm6afo8kos",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-20T14:47:00.000Z",
+        "publicaEmBR": "20/11 às 11h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 79,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmwnxm0aw0027ljdm1sgwo2v7",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-20T13:05:00.000Z",
+        "publicaEmBR": "20/11 às 10h05"
+      },
+      "facebook-story": {
+        "postId": "cmwnxm0js0028ljdmgsn19ijc",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-20T13:31:00.000Z",
+        "publicaEmBR": "20/11 às 10h31"
+      }
+    }
   }
 }
