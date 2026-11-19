@@ -1,5 +1,26 @@
 [
   {
+    "file": "en-quantitative-easing.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "dívida",
+        "dívidas",
+        "poupança",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-quotes-week-1-november-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -3432,6 +3453,21 @@
   },
   {
     "file": "en-how-to-turn-financial-chaos-into-control-with-the-kyco.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-turn-travel-spending-into-savings-the-power-of-a.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7136,6 +7172,21 @@
     }
   },
   {
+    "file": "es-como-convertir-tus-viajes-en-ahorro-el-poder-de-un-conversor.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-crear-tu-presupuesto-familiar-con-excel-y-apps.md",
     "dir": "posts",
     "severity": 0,
@@ -8923,6 +8974,21 @@
   {
     "file": "es-finmoovi-vs-organizze-cual-es-el-mejor-en-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-flexibilizacion-cuantitativa.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
