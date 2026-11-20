@@ -1,0 +1,118 @@
+{
+  "slug": "loop-parcela-atrasada-comeca-assim",
+  "formato": "loop16",
+  "term": "A parcela que atrasou",
+  "category": "vida",
+  "keyword": "ATRASO",
+  "valor": "R$ 45",
+  "situacao": "parcela-atrasada",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a não pagar multa à toa? Começa assim. Comigo foi num sábado.",
+      "durationSec": 4.95,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto venceu no sábado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O banco fechou e quarenta e cinco reais de multa vieram.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "fechou",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 45 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, agora eu pago na véspera, pelo celular.",
+      "durationSec": 2.83,
+      "shots": [
+        {
+          "anchor": "véspera",
+          "visual": {
+            "type": "statement",
+            "text": "Agora pago na véspera"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "celular",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, quer não pagar multa à toa? Começa pela véspera.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Multa à toa? Começa assim"
+          }
+        },
+        {
+          "anchor": "multa",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto venceu no sábado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
