@@ -1,0 +1,203 @@
+{
+  "slug": "kw-3-erros-que-te-fazem-desperdicar-agua-e-gastar-r-200-por-mes",
+  "term": "3 erros que te fazem desperdiçar água e gastar R$200 por mês",
+  "category": "mindset",
+  "keyword": "água",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto da sua conta de água a gente *joga fora* dentro de casa?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto da sua conta de água a gente joga fora dentro de casa? Boa parte, e vem de só três hábitos.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "joga",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "Só 3 hábitos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "São três coisas que a gente faz sem pensar. Deixar o chuveiro aberto enquanto ensaboa, deixar a torneira pingando, e ligar a máquina de lavar com meia roupa.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "chuveiro",
+          "visual": {
+            "type": "statement",
+            "text": "1. Chuveiro aberto"
+          }
+        },
+        {
+          "anchor": "torneira",
+          "visual": {
+            "type": "statement",
+            "text": "2. Torneira pingando"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "meia",
+          "visual": {
+            "type": "statement",
+            "text": "3. Máquina meio vazia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cada um parece pouco. Só que os três juntos, todo dia, fazem a sua conta de cento e cinquenta reais engordar à toa.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "pouco",
+          "visual": {
+            "type": "statement",
+            "text": "Parece pouco..."
+          }
+        },
+        {
+          "anchor": "juntos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "engordar",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu lancei minha conta no FinMoovi e ele separou o chuveiro, a torneira e a máquina, cada um com o seu pedaço.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "minha",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Conta de água separada por chuveiro, torneira e máquina"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "cada",
+          "visual": {
+            "type": "statement",
+            "text": "Cada um com seu pedaço"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu pedaço? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "pedaço",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Boa parte da sua conta de água é desperdício, e dá pra cortar hoje. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "desperdício",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "hoje",
+          "visual": {
+            "type": "statement",
+            "text": "Dá pra cortar hoje"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra seu pedaço do desperdício",
+    "target": "app"
+  },
+  "totalDurationSec": 49.2
+}
