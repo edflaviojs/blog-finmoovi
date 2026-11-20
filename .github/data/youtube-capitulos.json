@@ -3755,8 +3755,39 @@
           "titulo": "Alavancagem financeira com leilões"
         }
       ]
+    },
+    {
+      "videoId": "ndOLoeMw1V8",
+      "title": "Ganha Pouco e Quer Começar a Investir? Assista Antes de Desistir!",
+      "channel": "Capivara de Valores",
+      "duracaoSeg": 874,
+      "idioma": "pt",
+      "viewsPerDay": 104,
+      "vistoEm": "2026-11-20",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O custo de começar a investir depois dos 30"
+        },
+        {
+          "seg": 135,
+          "titulo": "O inventário: colocando as finanças no papel"
+        },
+        {
+          "seg": 298,
+          "titulo": "O teste do churrasco e a disciplina necessária"
+        },
+        {
+          "seg": 542,
+          "titulo": "O perigo dos atalhos e promessas de lucro fácil"
+        },
+        {
+          "seg": 721,
+          "titulo": "Passando o legado financeiro para a nova geração"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-19T12:20:02.000Z",
-  "total": 69
+  "atualizadoEm": "2026-11-20T12:21:04.930Z",
+  "total": 70
 }
