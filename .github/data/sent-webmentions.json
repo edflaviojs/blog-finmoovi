@@ -1840,5 +1840,41 @@
     "target": "https://www.investopedia.com/terms/o/ocr.asp",
     "status": "no-endpoint",
     "sentAt": "2026-11-06T16:58:38.519Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.234Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.301Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-calculate-compound-interest-in-practice-using-online/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.360Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-turn-travel-spending-into-savings-the-power-of-a/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.421Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-calcular-intereses-compuestos-en-la-practica-con/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.485Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-convertir-tus-viajes-en-ahorro-el-poder-de-un-conversor/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-20T18:03:47.548Z"
   }
 ]
