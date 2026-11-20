@@ -3,6 +3,7 @@ title: "5 Signs You Need a Finance App"
 description: "Discover 5 clues that spreadsheets aren’t enough and how an app like FinMoovi can simplify your money management."
 tickerHeadline: "The warning your wallet is sending"
 image: "/images/posts/5-sinais-de-que-voce-precisa-de-um-app-financeiro.webp"
+imageAlt: "Smiling couple holding two smartphones together in a bright indoor setting."
 category: "ferramentas"
 locale: "en"
 tags: ["finance app","spreadsheet vs app","FinMoovi","expense tracking","financial automation","when to use finance app","spreadsheet not working","need finance app"]

@@ -3,6 +3,7 @@ title: "5 señales de que necesitas una app financiera"
 description: "Descubre los 5 indicios de que tu hoja de cálculo ya no basta y cómo una app como FinMoovi simplifica tus finanzas."
 tickerHeadline: "La alerta que tu bolsillo necesita"
 image: "/images/posts/5-sinais-de-que-voce-precisa-de-um-app-financeiro.webp"
+imageAlt: "Tres personas sonrientes usando teléfonos móviles en un interior con una planta de fondo."
 category: "ferramentas"
 locale: "es"
 tags: ["app financiera","hoja de cálculo vs app","FinMoovi","control de gastos","automatización financiera","cuándo usar app finanzas","hoja de cálculo no funciona","necesito app financiera"]

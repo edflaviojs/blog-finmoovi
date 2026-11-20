@@ -4,6 +4,7 @@ definition: "Qué es sustentabilidad y cómo aparece en tu día a día — expli
 title: "sustentabilidad - Glosario Financiero"
 description: "Qué es sustentabilidad y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/sustentabilidade.webp"
+imageAlt: "Monedas doradas, gráfico ascendente y frascos con plantas sobre fondo púrpura."
 category: "basico"
 tags: ["sustentabilidad", "glosario", "finanzas"]
 author: "FinMoovi"

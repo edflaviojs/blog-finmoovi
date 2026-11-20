@@ -4,6 +4,7 @@ definition: "What sustainability is and how it shows up in your everyday money â
 title: "sustainability - Financial Glossary"
 description: "What sustainability is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/sustentabilidade.webp"
+imageAlt: "Stacks of gold coins, bar chart with arrow, and jars of coins with green plants."
 category: "basico"
 tags: ["sustainability", "glossary", "finance"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "5 Sinais de Que Você Precisa de um App Financeiro"
 description: "Descubra os 5 indícios de que sua planilha não basta e como um app como FinMoovi pode simplificar sua vida financeira."
 tickerHeadline: "O alerta que seu bolso pede"
 image: "/images/posts/5-sinais-de-que-voce-precisa-de-um-app-financeiro.webp"
+imageAlt: "Casal sorridente em sofá bege, usando dois smartphones dourados."
 category: "ferramentas"
 locale: "pt"
 tags: ["app financeiro","planilha vs app","FinMoovi","controle de gastos","automação financeira","quando usar app finanças","planilha não funciona","preciso app financeiro"]
