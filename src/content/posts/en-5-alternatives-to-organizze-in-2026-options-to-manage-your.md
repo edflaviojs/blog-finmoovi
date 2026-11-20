@@ -114,3 +114,7 @@ For more information on financial management, you can visit the [the central ban
 
 If you're looking for **finmoovi.com alternatives**, see our more complete guide on the topic: [Mobills Alternative: Best Free Budget Apps Compared](/en/posts/en-5-alternatives-to-mobills-in-2026/)
 
+## See also
+
+If you're looking for **finmoovi.com alternatives**, see our more complete guide on the topic: [FinMoovi vs Manual Tracking: Which Is Better for Your Money?](/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/)
+
