@@ -3238,5 +3238,25 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "5-sinais-de-que-voce-precisa-de-um-app-financeiro",
+    "title": "5 Sinais de Que Você Precisa de um App Financeiro",
+    "url": "https://blog.finmoovi.com/posts/5-sinais-de-que-voce-precisa-de-um-app-financeiro",
+    "submittedAt": "2026-11-20T22:03:29.511Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1937616330
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
