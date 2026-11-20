@@ -94,6 +94,23 @@
     }
   },
   {
+    "file": "en-sustainability.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-1-noviembre-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -873,6 +890,21 @@
   },
   {
     "file": "en-5-practical-steps-to-start-saving-for-black-friday-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-5-signs-you-need-a-finance-app.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6317,6 +6349,21 @@
     }
   },
   {
+    "file": "es-5-senales-de-que-necesitas-una-app-financiera.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-6-mejores-apps-financieros-para-freelancers-guia-practica.md",
     "dir": "posts",
     "severity": 0,
@@ -11178,6 +11225,21 @@
   },
   {
     "file": "es-subyacente.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-sustentabilidad.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
