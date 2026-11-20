@@ -1,0 +1,118 @@
+{
+  "slug": "loop-seguro-venceu-se-parar",
+  "formato": "loop16",
+  "term": "O seguro que venceu",
+  "category": "vida",
+  "keyword": "SEGURO",
+  "valor": "R$ 2.300",
+  "situacao": "seguro-venceu",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de olhar o seguro? Comigo, venceu ontem.",
+      "durationSec": 4.82,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "O seguro venceu ontem"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O carro quebrou. Conserto de dois reais.300, do meu bolso.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quebrou",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.300 do meu bolso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o seguro era meu escudo, e eu deixei cair.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "seguro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu escudo caiu sozinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "escudo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Parar de olhar o seguro, comigo, custou caro.",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "Parar",
+          "visual": {
+            "type": "statement",
+            "text": "E se você parar de olhar?"
+          }
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "statement",
+            "text": "O seguro venceu ontem"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
