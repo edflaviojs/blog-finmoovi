@@ -2093,5 +2093,12 @@
     "title": "VITALICIA: descubra quanto tempo sua conta aguenta",
     "formato": "short50",
     "publishAt": "2026-11-22T15:00:00.000Z"
+  },
+  "loop-cheque-especial-aconteceu-comigo": {
+    "videoId": "BmbXSvvALTw",
+    "uploadedAt": "2026-11-21T23:34:02.781Z",
+    "title": "ESPECIAL: R$ 210 no cheque especial",
+    "formato": "loop16",
+    "publishAt": "2026-11-22T21:40:00.000Z"
   }
 }
