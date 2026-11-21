@@ -4,6 +4,7 @@ definition: "O que é utilidade marginal e como isso aparece no seu dia a dia �
 title: "utilidade marginal - Glossário Financeiro"
 description: "O que é utilidade marginal e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/utilidade-marginal.webp"
+imageAlt: "Poupança suína, pilhas de moedas douradas e balança sobre pedestal iluminado."
 category: "basico"
 tags: ["utilidade marginal", "glossário", "finanças"]
 author: "FinMoovi"

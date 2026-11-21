@@ -4,6 +4,7 @@ definition: "Qué es utilidad marginal y cómo aparece en tu día a día — exp
 title: "utilidad marginal - Glosario Financiero"
 description: "Qué es utilidad marginal y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/utilidade-marginal.webp"
+imageAlt: "Monedas doradas, hucha blanca con número 13, balanza y frasco con planta sobre pedestal iluminado."
 category: "basico"
 tags: ["utilidad marginal", "glosario", "finanzas"]
 author: "FinMoovi"

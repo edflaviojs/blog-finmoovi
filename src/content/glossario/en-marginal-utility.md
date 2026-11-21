@@ -4,6 +4,7 @@ definition: "What Marginal utility is and how it shows up in your everyday money
 title: "Marginal utility - Financial Glossary"
 description: "What Marginal utility is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/utilidade-marginal.webp"
+imageAlt: "Gold coins, white piggy bank, and coin jar with sprout on a platform."
 category: "basico"
 tags: ["Marginal utility", "glossary", "finance"]
 author: "FinMoovi"
