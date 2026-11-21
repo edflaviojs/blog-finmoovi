@@ -6724,6 +6724,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-20"
+    },
+    "utilidade-marginal-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-21"
+    },
+    "utilidade-marginal-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-21"
+    },
+    "utilidade-marginal.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-21"
     }
   },
   "corrigidas": {
@@ -7408,6 +7423,6 @@
       "motivo": "tem texto escrito (\"$100\")"
     }
   },
-  "totalAcervo": 1345,
-  "ultimaCorrida": "2026-11-20"
+  "totalAcervo": 1348,
+  "ultimaCorrida": "2026-11-21"
 }
