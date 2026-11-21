@@ -1,0 +1,220 @@
+{
+  "slug": "renda-mensal-vitalicia",
+  "term": "renda mensal vitalicia",
+  "category": "basico",
+  "keyword": "vitalicia",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Se amanhã o seu *salário parar*, por quanto tempo a sua conta aguenta?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se amanhã o seu salário parar, por quanto tempo a sua conta aguenta? Renda mensal vitalícia é dinheiro que chega todo mês, até o fim da vida.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "amanhã",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "tempo",
+          "visual": {
+            "type": "icon",
+            "icon": "hourglass"
+          }
+        },
+        {
+          "anchor": "Renda",
+          "visual": {
+            "type": "statement",
+            "text": "Renda mensal vitalícia"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Todo mês vem a luz, o aluguel, o plano de saúde. E a gente só respira quando o salário cai.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Todo",
+          "visual": {
+            "type": "list",
+            "text": "Luz · Aluguel · Plano de saúde"
+          }
+        },
+        {
+          "anchor": "respira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "statement",
+            "text": "Respira só no dia do pagamento"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que tem gente que recebe todo mês sem trabalhar naquele mês. Vem de aposentadoria, de seguro, de investimento. E não tem data pra acabar.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "recebe",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "aposentadoria",
+          "visual": {
+            "type": "list",
+            "text": "Aposentadoria · Seguro · Investimento"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "data",
+          "visual": {
+            "type": "statement",
+            "text": "Sem data pra acabar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei no FinMoovi o que entra todo mês e o que sai. Ele me mostrou que faltavam quatrocentos reais pra fechar a conta.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Entradas e saídas do mês lado a lado"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 400"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "fechar",
+          "visual": {
+            "type": "statement",
+            "text": "Faltava fechar a conta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Sua conta só aguenta sem salário se o dinheiro chegar todo mês, sem você precisar correr atrás. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "aguenta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        },
+        {
+          "anchor": "chegar",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "correr",
+          "visual": {
+            "type": "statement",
+            "text": "Sem correr atrás"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto tempo sua conta aguenta",
+    "target": "app"
+  },
+  "totalDurationSec": 49.9
+}
