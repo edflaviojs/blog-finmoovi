@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-20T16:48:07.525Z
+Gerado em: 2026-11-21T16:00:00.841Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **839/1217** URLs indexadas
+- **843/1220** URLs indexadas
 - **377** não indexadas
-- **1** com erro na inspeção
-- **328** página(s) de conteúdo fora do índice há ≥7 dias
+- **0** com erro na inspeção
+- **339** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,9 +16,9 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 363
-- URL is unknown to Google: 11
-- Discovered - currently not indexed: 3
+- Crawled - currently not indexed: 361
+- URL is unknown to Google: 6
+- Discovered - currently not indexed: 10
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -29,13 +29,15 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/categorias/dicas/` — Crawled - currently not indexed (desde 2026-11-04)
 - `https://blog.finmoovi.com/en/categorias/ferramentas/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/en/categorias/orcamento/` — Crawled - currently not indexed (desde 2026-10-21)
+- `https://blog.finmoovi.com/es/categorias/dicas/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/es/categorias/orcamento/` — Crawled - currently not indexed (desde 2026-11-06)
-- `https://blog.finmoovi.com/es/categorias/investimentos/` — Crawled - currently not indexed (desde 2026-11-07)
+- `https://blog.finmoovi.com/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias/` — Crawled - currently not indexed (desde 2026-10-28)
 - `https://blog.finmoovi.com/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/` — Crawled - currently not indexed (desde 2026-11-09)
 - `https://blog.finmoovi.com/posts/7-erros-financeiros-iniciante/` — Crawled - currently not indexed (desde 2026-11-06)
 - `https://blog.finmoovi.com/posts/7-melhores-apps-de-controle-financeiro-2026-guia-completo/` — Crawled - currently not indexed (desde 2026-11-07)
+- `https://blog.finmoovi.com/posts/cashback-inteligente/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/como-economizar-no-plano-de-celular-e-internet-em-2026/` — Crawled - currently not indexed (desde 2026-11-10)
 - `https://blog.finmoovi.com/posts/como-economizar-no-supermercado-em-2026-dicas-reais/` — Crawled - currently not indexed (desde 2026-10-27)
@@ -65,10 +67,8 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel/` — Crawled - currently not indexed (desde 2026-11-07)
 - `https://blog.finmoovi.com/posts/evite-compras-por-impulso/` — Crawled - currently not indexed (desde 2026-11-10)
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
+- `https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-julho-2026/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Crawled - currently not indexed (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-11-01)
 - `https://blog.finmoovi.com/posts/migrando-da-planilha-para-um-app-financeiro/` — Crawled - currently not indexed (desde 2026-11-01)
-- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — URL is unknown to Google (desde 2026-08-12)
-- `https://blog.finmoovi.com/posts/orcamento-com-salario-minimo-dicas-praticas/` — Crawled - currently not indexed (desde 2026-10-30)
-- `https://blog.finmoovi.com/posts/orcamento-para-casal-dividindo-despesas/` — Crawled - currently not indexed (desde 2026-10-26)
-- `https://blog.finmoovi.com/posts/organizar-financas-de-casal/` — Crawled - currently not indexed (desde 2026-11-09)
+- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
