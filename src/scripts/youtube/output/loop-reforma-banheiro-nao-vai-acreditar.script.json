@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reforma-banheiro-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "A reforma que sempre adia",
+  "category": "vida",
+  "keyword": "REFORMA",
+  "valor": "R$ 1.400",
+  "situacao": "reforma-banheiro",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas o azulejo do banheiro continua solto.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "O azulejo solto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "azulejo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Chamei o pedreiro, e o orçamento deu mil e quatrocentos reais Fiquei calado.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Chamei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pedreiro",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.400 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sabe o que eu fiz? Deixei pra depois, como sempre.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Deixei",
+          "visual": {
+            "type": "statement",
+            "text": "Deixei pra depois"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Deixei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E o azulejo? Continua solto lá no meu banheiro.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "azulejo",
+          "visual": {
+            "type": "statement",
+            "text": "Continua solto"
+          }
+        },
+        {
+          "anchor": "Continua",
+          "visual": {
+            "type": "statement",
+            "text": "O azulejo solto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -1210,5 +1210,11 @@
     "gancho": "comeca-assim",
     "turno": "noite",
     "em": "2026-11-20T13:37:24.317Z"
+  },
+  {
+    "situacao": "reforma-banheiro",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-11-21T12:53:24.178Z"
   }
 ]
