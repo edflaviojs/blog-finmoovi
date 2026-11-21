@@ -1216,5 +1216,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-11-21T12:53:24.178Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "nao-vai-acreditar",
+    "turno": "noite",
+    "em": "2026-11-21T12:57:05.754Z"
   }
 ]
