@@ -4,6 +4,7 @@ definition: "What NASDAQ is and how it shows up in your everyday money — expla
 title: "NASDAQ - Financial Glossary"
 description: "What NASDAQ is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/nasdaq.webp"
+imageAlt: "Stacks of gold coins and a glass jar with a green plant on a dark background."
 category: "basico"
 tags: ["NASDAQ", "glossary", "finance"]
 author: "FinMoovi"

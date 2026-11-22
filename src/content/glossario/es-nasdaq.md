@@ -4,6 +4,7 @@ definition: "Qué es nasdaq y cómo aparece en tu día a día — explicado de f
 title: "nasdaq - Glosario Financiero"
 description: "Qué es nasdaq y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/nasdaq.webp"
+imageAlt: "Pilas de monedas doradas y planta verde en frasco de vidrio sobre fondo oscuro."
 category: "basico"
 tags: ["nasdaq", "glosario", "finanzas"]
 author: "FinMoovi"
