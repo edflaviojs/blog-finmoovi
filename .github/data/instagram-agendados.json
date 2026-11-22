@@ -34880,5 +34880,114 @@
         "publicaEmBR": "23/11 às 14h31"
       }
     }
+  },
+  "kw-r-200-a-menos-na-conta-ao-economizar-agua": {
+    "midias": {
+      "video": {
+        "id": "7afcf9ec-086a-48ba-a0dc-e3c0d45e9a31",
+        "name": "2JQ2eCB3bE.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/2JQ2eCB3bE.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "3397780c-8490-4c39-ad8c-41aa36877d61",
+        "name": "2M7nIvBt29.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/2M7nIvBt29.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "dfe5443c-54cf-43ca-90d9-99114948fc90",
+        "name": "WupgcasSyl.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/WupgcasSyl.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-22T22:00:00.000Z",
+    "publicaEmBR": "22/11 às 19h00",
+    "agendadoEm": "2026-11-22T21:06:03.359Z",
+    "atualizadoEm": "2026-11-22T21:06:07.268Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmwsbts4g0028mpd5zbyeq676",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-22T22:00:00.000Z",
+        "publicaEmBR": "22/11 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 694,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmwsbtsk80029mpd5x2mwdn8o",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-22T22:12:00.000Z",
+        "publicaEmBR": "22/11 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 258,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmwsbtt27002ampd5zpxqkepe",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-22T22:26:00.000Z",
+        "publicaEmBR": "22/11 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 465,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmwsbttj6002bmpd5zujk0sle",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-22T22:43:00.000Z",
+        "publicaEmBR": "22/11 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 417,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmwsbttw1002cmpd5rffy9y6w",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-22T22:58:00.000Z",
+        "publicaEmBR": "22/11 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 131,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmwsbtuk5002dmpd5ae0cx5i1",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-22T23:31:00.000Z",
+        "publicaEmBR": "22/11 às 20h31",
+        "midia": "vídeo primeiro, capa depois: a ordem que o Pinterest exige",
+        "caracteres": 443,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmwsbtuwz002empd5lnjiear9",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-22T23:47:00.000Z",
+        "publicaEmBR": "22/11 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 89,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmwsbtv77002fmpd5rb4gnudr",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-22T22:05:00.000Z",
+        "publicaEmBR": "22/11 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmwsbtvbv002gmpd533hxcoh3",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-22T22:31:00.000Z",
+        "publicaEmBR": "22/11 às 19h31"
+      }
+    }
   }
 }
