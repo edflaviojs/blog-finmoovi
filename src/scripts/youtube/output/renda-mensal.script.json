@@ -1,0 +1,229 @@
+{
+  "slug": "renda-mensal",
+  "term": "renda mensal",
+  "category": "basico",
+  "keyword": "mensal",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe de cabeça qual é a sua *renda mensal*, somando tudo que cai na conta?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe de cabeça qual é a sua renda mensal, somando tudo que cai na conta? Quase ninguém sabe. Eu mesmo lembrava só do salário.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "mensal",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Quase ninguém sabe"
+          }
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.200"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O resto eu esquecia na hora de falar da renda mensal. O bico de sábado, os cinquenta reais que a minha irmã devolveu, o aluguel do quartinho.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "resto",
+          "visual": {
+            "type": "statement",
+            "text": "O resto sumia"
+          }
+        },
+        {
+          "anchor": "bico",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Somei tudo. Mil e duzentos de salário, mais trezentos que eu nem contava. E o mês fechava no vermelho.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Somei",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1500,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "+ R$ 300"
+          }
+        },
+        {
+          "anchor": "fechava",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aí joguei cada entrada no FinMoovi e ele somou tudo. Mil e quinhentos reais, com salário, bico e aluguel separados.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "cada",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Entradas separadas: salário, bico e aluguel somadas"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          }
+        },
+        {
+          "anchor": "bico",
+          "visual": {
+            "type": "list",
+            "text": "Salário · Bico · Aluguel"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua renda mensal de verdade? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "verdade",
+          "visual": {
+            "type": "statement",
+            "text": "Sua renda de verdade"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Sua renda mensal é tudo que cai na conta, e quase ninguém soma. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é o que protege"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra sua renda mensal de verdade",
+    "target": "app"
+  },
+  "totalDurationSec": 48.1
+}
