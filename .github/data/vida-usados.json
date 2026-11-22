@@ -1228,5 +1228,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-11-22T12:45:51.229Z"
+  },
+  {
+    "situacao": "saque-no-cartao",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-11-22T12:48:51.765Z"
   }
 ]

@@ -1,0 +1,118 @@
+{
+  "slug": "loop-saque-no-cartao-depois-de-anos",
+  "formato": "loop16",
+  "term": "Sacar dinheiro no cartão",
+  "category": "vida",
+  "keyword": "SAQUE",
+  "valor": "R$ 60",
+  "situacao": "saque-no-cartao",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Comigo foi à noite.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Caixa eletrônico, de noite"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Saquei no cartão. Quando vi, sessenta reais tinham ido embora.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Saquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 60 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Calma, sabe? Aquele saque rapidinho era uma ratoeira, e eu entrei.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Calma",
+          "visual": {
+            "type": "statement",
+            "text": "Era uma ratoeira"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "saque",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, antes de sacar de noite, lembro o que descobri.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "statement",
+            "text": "Cartão na mão, de novo?"
+          }
+        },
+        {
+          "anchor": "noite",
+          "visual": {
+            "type": "statement",
+            "text": "Caixa eletrônico, de noite"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
