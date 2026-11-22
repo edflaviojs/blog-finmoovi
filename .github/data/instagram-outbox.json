@@ -22,5 +22,11 @@
     "runId": "44915844376",
     "producedAt": "2026-11-21T14:52:50.453Z",
     "artifact": "short-renda-mensal-vitalicia"
+  },
+  {
+    "fileSlug": "renda-mensal",
+    "runId": "45034454149",
+    "producedAt": "2026-11-22T14:52:06.495Z",
+    "artifact": "short-renda-mensal"
   }
 ]
