@@ -2114,5 +2114,12 @@
     "title": "MENSAL: descubra sua renda real em 1 minuto",
     "formato": "short50",
     "publishAt": "2026-11-23T15:00:00.000Z"
+  },
+  "loop-parcela-atrasada-comeca-assim": {
+    "videoId": "A6OrC_oJTZ0",
+    "uploadedAt": "2026-11-22T23:47:52.411Z",
+    "title": "ATRASO: R$ 45 por multa de sábado",
+    "formato": "loop16",
+    "publishAt": "2026-11-23T21:40:00.000Z"
   }
 }
