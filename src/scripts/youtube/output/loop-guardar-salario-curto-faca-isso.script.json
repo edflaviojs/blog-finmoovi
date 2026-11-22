@@ -1,0 +1,118 @@
+{
+  "slug": "loop-guardar-salario-curto-faca-isso",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "valor": "R$ 50",
+  "situacao": "guardar-salario-curto",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer guardar dinheiro, faça isso. Abri meu envelope.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "O envelope que não sobra"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Separei cinquenta reais e achei que sobrava. Quando vi, escorreu.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Separei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 50 sumiram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, meu dinheiro era balde furado. Enchia em cima, vazava embaixo.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu balde estava furado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "balde",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, pra guardar dinheiro, eu faço isso. Tapo o furo.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "Tape o furo primeiro"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "O envelope que não sobra"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
