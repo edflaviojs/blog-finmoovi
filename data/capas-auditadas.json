@@ -6739,6 +6739,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-21"
+    },
+    "nasdaq-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-22"
+    },
+    "nasdaq-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-22"
+    },
+    "nasdaq.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-22"
     }
   },
   "corrigidas": {
@@ -7423,6 +7438,6 @@
       "motivo": "tem texto escrito (\"$100\")"
     }
   },
-  "totalAcervo": 1348,
-  "ultimaCorrida": "2026-11-21"
+  "totalAcervo": 1351,
+  "ultimaCorrida": "2026-11-22"
 }
