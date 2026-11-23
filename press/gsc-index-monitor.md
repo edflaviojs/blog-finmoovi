@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-22T16:02:44.306Z
+Gerado em: 2026-11-23T19:53:03.116Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **850/1223** URLs indexadas
-- **373** não indexadas
-- **0** com erro na inspeção
-- **345** página(s) de conteúdo fora do índice há ≥7 dias
+- **860/1223** URLs indexadas
+- **362** não indexadas
+- **1** com erro na inspeção
+- **352** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,9 +16,9 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 361
-- URL is unknown to Google: 11
-- Discovered - currently not indexed: 1
+- Crawled - currently not indexed: 357
+- Discovered - currently not indexed: 2
+- URL is unknown to Google: 3
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -37,6 +37,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/` — Crawled - currently not indexed (desde 2026-11-09)
 - `https://blog.finmoovi.com/posts/7-erros-financeiros-iniciante/` — Crawled - currently not indexed (desde 2026-11-06)
 - `https://blog.finmoovi.com/posts/7-melhores-apps-de-controle-financeiro-2026-guia-completo/` — Crawled - currently not indexed (desde 2026-11-07)
+- `https://blog.finmoovi.com/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu/` — Crawled - currently not indexed (desde 2026-11-16)
 - `https://blog.finmoovi.com/posts/cashback-inteligente/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/como-economizar-no-plano-de-celular-e-internet-em-2026/` — Crawled - currently not indexed (desde 2026-11-10)
@@ -51,6 +52,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/como-transformar-a-planilha-em-aliada-das-suas-financas-em/` — Crawled - currently not indexed (desde 2026-11-15)
 - `https://blog.finmoovi.com/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos/` — Crawled - currently not indexed (desde 2026-10-20)
+- `https://blog.finmoovi.com/posts/consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-11-16)
 - `https://blog.finmoovi.com/posts/cotacoes-semana-1-julho-2026/` — Crawled - currently not indexed (desde 2026-11-07)
 - `https://blog.finmoovi.com/posts/cotacoes-semana-1-junho-2026/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/cotacoes-semana-2-julho-2026/` — Crawled - currently not indexed (desde 2026-11-07)
@@ -70,5 +72,3 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-julho-2026/` — Crawled - currently not indexed (desde 2026-11-14)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Crawled - currently not indexed (desde 2026-08-07)
-- `https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-11-01)
-- `https://blog.finmoovi.com/posts/migrando-da-planilha-para-um-app-financeiro/` — Crawled - currently not indexed (desde 2026-11-01)
