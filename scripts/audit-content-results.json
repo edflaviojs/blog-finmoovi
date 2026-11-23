@@ -1,26 +1,5 @@
 [
   {
-    "file": "en-quantitative-easing.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "dívida",
-        "dívidas",
-        "poupança",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-quotes-week-1-november-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -37,37 +16,6 @@
         "IPCA"
       ],
       "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-quotes-week-3-november-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [
-        "brasileiras"
-      ],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA",
-        "LCI",
-        "LCA"
-      ],
-      "ptLeftovers": [
-        "ações",
-        "poupança",
-        "reais",
-        "investimentos",
-        "valor"
-      ]
     }
   },
   {
@@ -90,23 +38,6 @@
       ],
       "ptLeftovers": [
         "reais"
-      ]
-    }
-  },
-  {
-    "file": "en-sustainability.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "valor"
       ]
     }
   },
@@ -257,6 +188,30 @@
       "brBrands": [],
       "brAcronyms": [
         "IPCA"
+      ],
+      "ptLeftovers": [
+        "reais"
+      ]
+    }
+  },
+  {
+    "file": "en-quotes-week-3-november-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "LCI",
+        "LCA"
       ],
       "ptLeftovers": [
         "reais"
@@ -4129,6 +4084,21 @@
     }
   },
   {
+    "file": "en-marginal-utility.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-master-your-monthly-expenses-and-avoid-surprises-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4295,6 +4265,21 @@
   },
   {
     "file": "en-mortgage.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-nasdaq.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4745,6 +4730,21 @@
   },
   {
     "file": "en-promissory-note.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-quantitative-easing.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5480,6 +5480,21 @@
   },
   {
     "file": "en-stop-loss.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-sustainability.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -10144,6 +10159,21 @@
     }
   },
   {
+    "file": "es-nasdaq.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-navidad-sin-deudas-7-pasos-practicos-para-disfrutar-las.md",
     "dir": "posts",
     "severity": 0,
@@ -11510,6 +11540,21 @@
   },
   {
     "file": "es-usura.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-utilidad-marginal.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
