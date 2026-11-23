@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T17:48:12.440Z",
+  "updatedAt": "2026-11-23T18:50:20.210Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2522,6 +2522,30 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-11-16T16:34:43.284Z"
+    },
+    {
+      "keyword": "equity",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-23T18:50:19.745Z"
+    },
+    {
+      "keyword": "como sair das dívidas",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-23T18:50:19.745Z"
+    },
+    {
+      "keyword": "gestion",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-23T18:50:19.745Z"
     }
   ]
 }

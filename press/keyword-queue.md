@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-11-16T16:34:43.723Z
-**Totais:** 80 pendente(s) · 119 usada(s) · 60 pulada(s)
+**Atualizado em:** 2026-11-23T18:50:20.210Z
+**Totais:** 81 pendente(s) · 121 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,10 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 36
+### Lacunas do GSC (prioridade 2) — 37
 
-- calculo de juros composto online
-- conversor de moeda online
 - o que significa valor em aberto
 - planilla flujo de caja
 - finmoovi technologia
@@ -90,6 +88,9 @@
 - capital en giro
 - giro
 - subyacente
+- equity
+- como sair das dívidas
+- gestion
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -99,6 +100,8 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| conversor de moeda online | gerar-dicas-financeiras | 2026-11-18 |
+| calculo de juros composto online | gerar-post-inteligente | 2026-11-17 |
 | calculadora parcelamento price | gerar-post-investimentos | 2026-11-11 |
 | simulador sac price | gerar-dicas-financeiras | 2026-10-31 |
 | calcular juro composto | gerar-dicas-financeiras | 2026-10-29 |
@@ -107,8 +110,6 @@ _Nenhuma._
 | gastos recurrentes definicion | gerar-dicas-financeiras | 2026-10-26 |
 | mortgage | gerar-dicas-financeiras | 2026-10-23 |
 | debenture | gerar-dicas-financeiras | 2026-10-22 |
-| calculadora tabela sac | gerar-post-investimentos | 2026-10-21 |
-| tudo sobre investimentos | gerar-dicas-financeiras | 2026-10-12 |
 
 ## ⏭️ Puladas (já cobertas)
 
