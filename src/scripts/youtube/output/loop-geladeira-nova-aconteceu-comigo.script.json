@@ -1,0 +1,118 @@
+{
+  "slug": "loop-geladeira-nova-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "valor": "R$ 2.600",
+  "situacao": "geladeira-nova",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. A geladeira roncava de madrugada.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso foi comigo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ela pifou, comprei outra correndo. Dois mil e seiscentos reais de uma vez.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "pifou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "comprei",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.600 no susto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, a geladeira avisou e eu ignorei. Pressa é ratoeira.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "geladeira",
+          "visual": {
+            "type": "statement",
+            "text": "Pressa é ratoeira"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "avisou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Geladeira roncando de madrugada. O aviso que passou batido comigo.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Geladeira",
+          "visual": {
+            "type": "statement",
+            "text": "O aviso da madrugada"
+          }
+        },
+        {
+          "anchor": "roncando",
+          "visual": {
+            "type": "statement",
+            "text": "Isso foi comigo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
