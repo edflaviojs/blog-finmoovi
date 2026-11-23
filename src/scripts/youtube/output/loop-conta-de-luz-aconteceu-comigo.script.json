@@ -1,0 +1,118 @@
+{
+  "slug": "loop-conta-de-luz-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "A conta de luz do verão",
+  "category": "vida",
+  "keyword": "LUZ",
+  "valor": "R$ 420",
+  "situacao": "conta-de-luz",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Chegou a conta de luz.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "A conta de luz chegou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Janeiro, quatrocentos e vinte reais Só de ventilador ligado o mês inteiro.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Janeiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 420 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o ventilador ficava ligado no quarto vazio. Agora desligo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "ventilador",
+          "visual": {
+            "type": "statement",
+            "text": "Ventilador no quarto vazio"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "ficava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Aquele susto na conta de luz aconteceu comigo, semana passada.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "statement",
+            "text": "O susto da conta de luz"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "A conta de luz chegou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

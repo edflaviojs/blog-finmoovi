@@ -1240,5 +1240,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-11-23T15:07:16.390Z"
+  },
+  {
+    "situacao": "conta-de-luz",
+    "gancho": "aconteceu-comigo",
+    "turno": "noite",
+    "em": "2026-11-23T15:11:06.882Z"
   }
 ]
