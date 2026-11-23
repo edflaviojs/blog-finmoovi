@@ -1,0 +1,213 @@
+{
+  "slug": "giro",
+  "term": "giro",
+  "category": "basico",
+  "keyword": "giro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe pra onde vai o seu *salário*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe pra onde vai o seu salário? Cai numa sexta, e na terça já não sobrou nada.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "sexta",
+          "visual": {
+            "type": "statement",
+            "text": "Sexta: cai tudo"
+          }
+        },
+        {
+          "anchor": "sobrou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso é o giro, a pressa com que o dinheiro entra e sai da sua conta. Aluguel, mercado, luz.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "giro",
+          "visual": {
+            "type": "statement",
+            "text": "Giro = pressa do dinheiro"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "entra",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "Aluguel",
+          "visual": {
+            "type": "list",
+            "text": "Aluguel · Mercado · Luz"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu fui contar. Aluguel oitocentos, mercado trezentos, luz cento e cinquenta. Deu mil duzentos e cinquenta reais em cinco dias.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "oitocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 800"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1250,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Joguei as três no FinMoovi e ele marcou o dia de cada uma. Tudo grudado na primeira semana.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Contas marcadas por dia no mês"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "grudado",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo na 1ª semana"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o giro do seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "giro",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quando o giro é rápido demais, o salário some antes de você ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "rápido",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, é dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra o giro do seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 40.7
+}
