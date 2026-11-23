@@ -178,5 +178,11 @@
       "en",
       "es"
     ]
+  },
+  "renda-passiva-por-dia": {
+    "estado": "reservado",
+    "publishAt": "2026-11-29T22:00:00.000Z",
+    "reservadoEm": "2026-11-23T10:36:56.279Z",
+    "corrida": "45157556100"
   }
 }

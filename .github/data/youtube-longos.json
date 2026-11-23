@@ -413,6 +413,57 @@
       "propostoEm": "2026-11-08T10:54:47.752Z",
       "publicadoEm": "2026-11-17T02:25:30.311Z",
       "videoId": "z85NS2rPSUo"
+    },
+    {
+      "slug": "renda-passiva-por-dia",
+      "titulo": "Renda passiva de R$ 50 por dia quanto guardar sem depender de sorte",
+      "tema": "Quanto guardar por mês para chegar a R$ 50 por dia de renda passiva",
+      "angulo": "A dor: quem ganha entre 2 e 6 mil reais ouve falar em renda passiva, mas não sabe quanto precisa guardar para ela existir. Mostro a conta feita: R$ 50 por dia são cerca de R$ 1.500 por mês, e com um rendimento de 0,8% ao mês isso pede perto de R$ 190 mil acumulados. Depois mostro quanto guardar por mês, com valores de R$ 200, R$ 400 e R$ 600, e em quantos anos cada um chega lá, para a pessoa sair com um número real e não com uma promessa.",
+      "glossario": "aplicacao-financeira",
+      "palavrasChave": [
+        "renda passiva",
+        "renda passiva por dia",
+        "quanto guardar por mês",
+        "renda passiva com pouco dinheiro",
+        "como juntar dinheiro todo mês"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "kt6PmR6VGgw",
+        "title": "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
+        "views": 382604,
+        "viewsPerDay": 39804,
+        "estrutura": [
+          "número concreto no título (\"50\")"
+        ]
+      },
+      "propostoEm": "2026-11-22T12:09:20.505Z"
+    },
+    {
+      "slug": "habitos-para-economizar-dinheiro",
+      "titulo": "10 hábitos para economizar dinheiro todo mês sem precisar ganhar mais",
+      "tema": "10 hábitos simples que fazem sobrar dinheiro no fim do mês, com as contas em reais",
+      "angulo": "A dor é quem ganha entre 2 e 6 mil reais, trabalha o mês inteiro e vê o salário acabar antes do dia 30 sem saber para onde foi. Mostro 10 hábitos pequenos e sem graça, cada um com a conta feita: por exemplo, revisar assinaturas esquecidas (R$ 90 por mês, R$ 1.080 por ano), levar almoço 2 vezes por semana (R$ 25 de diferença por refeição, cerca de R$ 200 por mês) e esperar 48 horas antes de compras não planejadas. No fim, a pessoa sai com uma lista de 10 hábitos e a soma do que cada um devolve ao bolso, para escolher por onde começar sem mudar de vida.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "hábitos para economizar",
+        "como economizar dinheiro",
+        "economizar todo mês",
+        "controle de gastos",
+        "dinheiro sobrar no mês"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "fiXgdaPZ27I",
+        "title": "10 Hábitos “Sem Graça” Que Estão Me Fazendo Economizar MUITO Dinheiro",
+        "views": 323753,
+        "viewsPerDay": 5407,
+        "estrutura": [
+          "lista numerada (o número está no início e promete quantas coisas vêm)",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-11-22T12:09:20.505Z"
     }
   ]
 }
