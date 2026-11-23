@@ -462,6 +462,72 @@
         "cena": "67",
         "boneco": "super-heroi"
       }
+    ],
+    "renda-passiva-por-dia": [
+      {
+        "cena": "2",
+        "boneco": "bocejar"
+      },
+      {
+        "cena": "3",
+        "boneco": "pensando"
+      },
+      {
+        "cena": "8",
+        "boneco": "susto"
+      },
+      {
+        "cena": "11",
+        "boneco": "mesa-faturas"
+      },
+      {
+        "cena": "13",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "14",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "18",
+        "boneco": "morder-unhas"
+      },
+      {
+        "cena": "22",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "27",
+        "boneco": "escorregar-banana"
+      },
+      {
+        "cena": "33",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "36",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "40",
+        "boneco": "sentar-derrotado"
+      },
+      {
+        "cena": "44",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "50",
+        "boneco": "levantar"
+      },
+      {
+        "cena": "57",
+        "boneco": "proteger"
+      },
+      {
+        "cena": "63",
+        "boneco": "super-heroi"
+      }
     ]
   }
 }

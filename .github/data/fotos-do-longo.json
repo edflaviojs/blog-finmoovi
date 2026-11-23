@@ -175,6 +175,36 @@
         "pista": "virei a folha e escrevi cento",
         "movimento": "aproxima-lento"
       }
+    ],
+    "renda-passiva-por-dia": [
+      {
+        "ficheiro": "manus/onde-o-salario-some/susto.jpg",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "pistas": [
+          "voce ja olhou o saldo do"
+        ],
+        "usadoEm": [
+          "onde-o-salario-some",
+          "renda-passiva-por-dia"
+        ],
+        "pista": "sabe qual foi a pergunta que",
+        "movimento": "aproxima"
+      },
+      {
+        "ficheiro": "manus/onde-o-salario-some/virada.jpg",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "pistas": [
+          "eu sentei com a minha avo"
+        ],
+        "usadoEm": [
+          "onde-o-salario-some",
+          "renda-passiva-por-dia"
+        ],
+        "pista": "peguei a caneta que tava em",
+        "movimento": "aproxima-lento"
+      }
     ]
   }
 }

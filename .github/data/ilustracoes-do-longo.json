@@ -339,6 +339,32 @@
         "cena": "58",
         "figura": "guarda-chuva"
       }
+    ],
+    "renda-passiva-por-dia": [
+      {
+        "cena": "24",
+        "figura": "ralo"
+      },
+      {
+        "cena": "35",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "19",
+        "figura": "cofre"
+      },
+      {
+        "cena": "31",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "51",
+        "figura": "escada"
+      },
+      {
+        "cena": "62",
+        "figura": "corda-bamba"
+      }
     ]
   }
 }

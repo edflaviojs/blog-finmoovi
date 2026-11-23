@@ -223,6 +223,22 @@
       "cena": "a mudança de casa, com caminhão e caixas",
       "promessa": "Você consegue juntar três mil e seiscentos reais em dois anos guardando só cento e cinquenta por mês, e eu vou te provar isso.",
       "em": "2026-11-16"
+    },
+    {
+      "slug": "renda-passiva-por-dia",
+      "cenarios": [
+        "o boleto",
+        "a conta de luz",
+        "o carro",
+        "a geladeira",
+        "a obra em casa"
+      ],
+      "fio": "semente",
+      "elenco": "uma mãe e uma filha já adulta, cada uma na sua fase da vida",
+      "funcaoDoApp": "relatorios",
+      "cena": "a formatura do filho — a beca, a foto e a festa",
+      "promessa": "Cinquenta reais por dia de renda passiva pedem cento e noventa mil reais guardados, e eu vou te provar isso.",
+      "em": "2026-11-23"
     }
   ]
 }
