@@ -34989,5 +34989,59 @@
         "publicaEmBR": "22/11 às 19h31"
       }
     }
+  },
+  "reserva-emergencia-antes-proxima": {
+    "midias": {
+      "video": {
+        "id": "373036fb-1fce-4f89-9bee-834f5a6ca97c",
+        "name": "9nPtJF7yP0.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/9nPtJF7yP0.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": null,
+      "capaLarga": {
+        "id": "b08a5720-f219-4eb6-be4c-93aa65015eb7",
+        "name": "zIM3LfbRdw.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/zIM3LfbRdw.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-23T23:00:00.000Z",
+    "publicaEmBR": "23/11 às 20h00",
+    "agendadoEm": "2026-11-23T01:33:25.914Z",
+    "atualizadoEm": "2026-11-23T01:33:27.211Z",
+    "redes": {
+      "facebook": {
+        "postId": "cmwsldmlg002hmpd5sdqoeovs",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-23T23:26:00.000Z",
+        "publicaEmBR": "23/11 às 20h26",
+        "midia": "o vídeo",
+        "caracteres": 571,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmwsldn7u002impd5ibc7oid5",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-23T23:43:00.000Z",
+        "publicaEmBR": "23/11 às 20h43",
+        "midia": "o vídeo",
+        "caracteres": 600,
+        "limite": 3000
+      },
+      "bluesky": {
+        "postId": "cmwsldno0002jmpd5dnp1ydjx",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-24T00:47:00.000Z",
+        "publicaEmBR": "23/11 às 21h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 132,
+        "limite": 300
+      }
+    }
   }
 }
