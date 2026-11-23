@@ -18,72 +18,68 @@ seo:
   keywords: ["Marginal utility", "glossary", "finance"]
 ---
 
-## O dilema do último copo de café
+## The dilemma of the last cup of coffee
 
-Você já chegou ao fim do dia, abriu a geladeira e encontrou só um copo de café frio? Na hora, pensa: “Vale a pena esquentar esse último copo ou melhor comprar um novo?”. Essa decisão parece simples, mas esconde um conceito econômico que pode mudar a forma como você gasta dinheiro no cotidiano: a **utilidade marginal**. Em termos práticos, a utilidade marginal é o prazer ou benefício extra que você obtém ao consumir uma unidade a mais de algo. Quando o benefício da próxima unidade começa a cair, é sinal de que você está chegando ao limite da sua disposição de pagar.
+Have you ever reached the end of the day, opened the fridge and found only one cup of cold coffee? In that moment you think: “Is it worth heating up this last cup or should I just buy a new one?”. The decision seems simple, but it hides an economic concept that can change how you spend money in everyday life: **marginal utility**. In practical terms, marginal utility is the extra pleasure or benefit you get from consuming one more unit of something. When the benefit of the next unit starts to drop, it’s a sign that you’re reaching the limit of your willingness to pay.
 
-![O dilema do último copo de café](/images/glossario/utilidade-marginal-inline-1.webp)
+![The dilemma of the last cup of coffee](/images/glossario/utilidade-marginal-inline-1.webp)
 
+Imagine that the first cup of coffee gives you a “energy boost” worth the price of a street coffee (about a quick snack). The second cup still helps, but less. The third one might not even be worth the cost of a bread roll. This decline in additional pleasure is marginal utility in action. Understanding this helps you avoid unnecessary spending and direct your money toward things that truly bring more satisfaction.
 
+## How FinMoovi brings clarity to marginal utility
 
-Imagine que o primeiro copo de café lhe dá um “pico de energia” que vale o preço de um café na rua (cerca de um lanche rápido). O segundo copo ainda ajuda, mas menos. O terceiro, talvez, já não vale nem o custo de um pão. Essa queda no prazer adicional é a utilidade marginal em ação. Entender isso ajuda a evitar gastos desnecessários e a direcionar seu dinheiro para coisas que realmente trazem mais satisfação.
+FinMoovi has a feature that makes all the difference: **smart capture**. Just take a photo of the receipt or speak the amount you just paid, and the app automatically categorizes the expense – coffee, groceries, transport, etc. That way, you see in real time how much you’re spending in each category and can compare the marginal utility of each purchase.
 
-## Como a FinMoovi traz clareza à utilidade marginal
+In addition to smart capture, FinMoovi offers:
 
-A FinMoovi tem um recurso que faz toda a diferença: **captura inteligente**. Basta tirar uma foto do recibo ou falar o valor que você acabou de pagar, e o app categoriza automaticamente a despesa – café, supermercado, transporte, etc. Assim, você vê, em tempo real, quanto está gastando em cada categoria e consegue comparar a utilidade marginal de cada compra.
+- **Multi‑currency**: record expenses in different currencies (dollar, euro, real) without having to convert manually.  
+- **Cash flow and reports**: view inflows and outflows in simple charts.  
+- **Monthly planning and goals**: set how much you want to save for trips, emergencies or that wish‑list item.  
+- **Credit cards and accounts**: track bills and due dates.  
+- **Shopping mode**: create lists, see the total in real time and avoid surprises at checkout.  
+- **Balance alerts and reminders**: get notifications when you’re close to the limit you set.  
+- **Offline/PWA mode**: use the app even without internet and sync later.
 
-Além da captura inteligente, a FinMoovi oferece:
+With these features, marginal utility stops being an abstract concept and becomes a practical tool for deciding whether that last cup of coffee is worth it or if it’s better to keep the money for something that brings more satisfaction.
 
-- **Multi‑moeda**: registre gastos em diferentes moedas (dólar, euro, real) sem precisar converter manualmente.
-- **Fluxo de caixa e relatórios**: visualize entradas e saídas em gráficos simples.
-- **Planejamento mensal e metas**: defina quanto quer economizar para viagens, emergências ou aquele item de desejo.
-- **Cartões de crédito e contas**: acompanhe faturas e datas de vencimento.
-- **Modo compras**: crie listas, veja o total em tempo real e evite surpresas no caixa.
-- **Alertas de saldo e lembretes**: receba notificações quando estiver perto do limite que você definiu.
-- **Modo offline/PWA**: use o app mesmo sem internet e sincronize depois.
+## Applying marginal utility in everyday life
 
-Com esses recursos, a utilidade marginal deixa de ser um conceito abstrato e passa a ser uma ferramenta prática para decidir se aquele último copo de café vale a pena ou se é melhor guardar o dinheiro para algo que traga mais satisfação.
+### 1. Assess the real benefit of each expense
 
-## Aplicando a utilidade marginal no dia a dia
+![Applying marginal utility in everyday life](/images/glossario/utilidade-marginal-inline-3.webp)
 
-### 1. Avalie o benefício real de cada gasto
+- **Eating out**: the first lunch out can be a treat, but the third one in the same week may be just convenience.  
+- **Digital subscriptions**: the first service (streaming, magazine) brings novelty; the second may be redundant.  
+- **Impulse purchases**: a pair of sneakers can be useful, but the third pair of the same model probably doesn’t add extra benefit.
 
-![Aplicando a utilidade marginal no dia a dia](/images/glossario/utilidade-marginal-inline-3.webp)
+**Practical tip:** before buying, ask yourself “When was the last time I really used this?” If the answer is “more than a month ago,” the marginal utility is low.
 
+### 2. Use smart capture to record everything
 
+By logging each expense with a photo or voice note, you create a detailed history that lets you analyze patterns. For example, at the end of the month the report might show that you spent the equivalent of “three daily coffees” on quick snacks. If the marginal utility of those snacks is low, you can cut back and redirect the money to something that brings more pleasure, like a hobby or a trip.
 
-- **Alimentação fora de casa**: o primeiro almoço fora pode ser um prazer, mas o terceiro da mesma semana pode ser só conveniência.
-- **Assinaturas digitais**: o primeiro serviço (streaming, revista) traz novidade; o segundo pode ser redundante.
-- **Compras impulsivas**: um par de tênis pode ser útil, mas o terceiro par do mesmo modelo provavelmente não traz benefício extra.
+**Practical tip:** enable the “automatic capture” notification in list‑shopping mode; then, when you mark an item as bought, the amount is instantly placed in the correct category.
 
-**Practical tip:** antes de comprar, pergunte a si mesmo “Qual foi a última vez que eu realmente usei isso?” Se a resposta for “há mais de um mês”, a utilidade marginal está baixa.
+### 3. Set goals based on marginal utility
 
-### 2. Use a captura inteligente para registrar tudo
+If your goal is to save the equivalent of “one month’s rent” for an emergency fund, use FinMoovi’s goal feature. Every time an expense has low marginal utility, the app can suggest moving that amount to the goal. Thus, small daily adjustments turn into a sizable savings pool by year‑end.
 
-Ao registrar cada gasto com foto ou voz, você cria um histórico detalhado que permite analisar padrões. Por exemplo, ao final do mês, o relatório pode mostrar que você gastou o equivalente a “três cafés diários” em lanches rápidos. Se a utilidade marginal desses lanches for baixa, você pode reduzir o número e redirecionar o dinheiro para algo que traga mais prazer, como um hobby ou uma viagem.
+**Practical tip:** set up “low marginal utility” alerts – the app notifies you when you spend more than X% of your budget in categories where the extra benefit tends to be small (e.g., snacks, delivery apps).
 
-**Practical tip:** ative a notificação de “captura automática” nas compras do modo lista; assim, ao marcar um item como comprado, o valor já entra na categoria correta.
+## Why marginal utility matters for your wallet
 
-### 3. Defina metas baseadas na utilidade marginal
+When you understand that each additional unit of consumption yields less satisfaction, it becomes easier to say “no” to spending that drains your money without delivering return. This doesn’t mean cutting out everything that gives pleasure, but balancing immediate enjoyment with long‑term objectives. FinMoovi makes this balance easier by turning raw data into actionable insights.
 
-Se a sua meta é economizar o equivalente a “um mês de aluguel” para uma reserva de emergência, use o recurso de metas da FinMoovi. Cada vez que uma despesa tem baixa utilidade marginal, o app pode sugerir transferir esse valor para a meta. Assim, pequenos ajustes diários se transformam em uma grande poupança ao final do ano.
+- **Real savings**: by cutting low‑marginal‑utility spending, you can save up to 15 % of your monthly budget without feeling a big loss.  
+- **Faster decisions**: smart capture removes doubt at the point of purchase – the app already shows how much you’ve spent in that category.  
+- **Greater emotional control**: seeing clear numbers reduces the temptation to buy impulsively, because you have a “satisfaction thermometer.”
 
-**Practical tip:** configure alertas de “utilidade marginal baixa” – o app avisa quando você gasta mais de X% do seu orçamento em categorias onde o benefício extra costuma ser pequeno (ex.: lanches, apps de entrega).
+## Advanced strategies to maximize marginal utility
 
-## Por que a utilidade marginal importa para seu bolso
-
-Quando você entende que cada unidade adicional de consumo gera menos satisfação, fica mais fácil dizer “não” a gastos que drenam seu dinheiro sem trazer retorno. Isso não significa cortar tudo que dá prazer, mas equilibrar o prazer imediato com objetivos de longo prazo. A FinMoovi facilita esse equilíbrio ao transformar dados brutos em insights acionáveis.
-
-- **Economia real**: ao reduzir gastos de baixa utilidade marginal, você pode economizar até 15 % do seu orçamento mensal sem sentir grande perda.
-- **Decisões mais rápidas**: a captura inteligente elimina a dúvida na hora da compra – o app já mostra quanto você já gastou naquela categoria.
-- **Maior controle emocional**: ao ver números claros, a tentação de comprar por impulso diminui, porque você tem um “termômetro” de satisfação.
-
-## Estratégias avançadas para maximizar a utilidade marginal
-
-1. **Agrupe despesas por ciclo de uso** – por exemplo, roupas que duram um ano versus roupas que duram três meses. Avalie a utilidade marginal por ciclo, não por compra isolada.
-2. **Use a multi‑moeda para viagens** – ao comparar o custo de um jantar em outra moeda, a FinMoovi converte automaticamente, ajudando a perceber se o gasto vale a experiência.
-3. **Combine metas de curto e longo prazo** – reserve parte da economia de baixa utilidade marginal para metas imediatas (um fim de semana) e outra parte para a reserva de emergência.
+1. **Group expenses by usage cycle** – for example, clothes that last a year versus clothes that last three months. Evaluate marginal utility per cycle, not per isolated purchase.  
+2. **Use multi‑currency for travel** – when comparing the cost of a dinner in another currency, FinMoovi converts automatically, helping you see if the expense is worth the experience.  
+3. **Combine short‑ and long‑term goals** – allocate part of the savings from low‑marginal‑utility spending to immediate goals (a weekend getaway) and another part to the emergency fund.
 
 ## Start today
 
-**Micro‑ação de 5 minutos:** abra a FinMoovi, ative a captura inteligente e tire foto do último recibo que ainda está na sua bolsa. Em seguida, classifique a despesa como “café” e veja o total gasto na categoria nos últimos 30 dias. Se o valor estiver acima do que você acha que traz prazer, ajuste a meta mensal para reduzir esse gasto. Pronto – em cinco minutos você já está usando a utilidade marginal a seu favor!
+**5‑minute micro‑action:** open FinMoovi, enable smart capture and snap a photo of the last receipt still in your bag. Then, categorize the expense as “coffee” and see the total spent in that category over the past 30 days. If the amount is higher than what you feel brings you pleasure, adjust your monthly goal to reduce that spending. Done – in five minutes you’re already using marginal utility to your advantage!

@@ -18,64 +18,64 @@ seo:
   keywords: ["sustainability", "glossary", "finance"]
 ---
 
-## O que está te tirando o sono?
+## What’s keeping you up at night?
 
-Você já percebeu que, no fim do mês, o dinheiro parece evaporar antes mesmo de pagar as contas fixas? A sensação de que, apesar de todo esforço, o saldo da conta nunca acompanha o ritmo das despesas. Essa ansiedade costuma aparecer quando a gente tenta conciliar gastos do dia a dia – como o preço de um café, a conta de luz, a assinatura de streaming – com metas maiores, como uma viagem ou a reserva para emergências. O ponto crítico é a falta de visão clara de onde cada centavo está indo e, principalmente, se esses gastos são realmente sustentáveis a longo prazo.
+Have you noticed that, at the end of the month, the money seems to evaporate before you even pay the fixed bills? The feeling that, despite all the effort, the account balance never keeps up with the pace of expenses. This anxiety usually shows up when we try to juggle everyday spending – like the price of a coffee, the electricity bill, a streaming subscription – with bigger goals, such as a trip or an emergency reserve. The critical point is the lack of a clear view of where every cent is going and, especially, whether those expenses are truly sustainable in the long run.
 
-![O que está te tirando o sono?](/images/glossario/sustentabilidade-inline-1.webp)
-
-
-
-## Entendendo “sustentabilidade” financeira
-
-Sustentabilidade, nesse contexto, não tem nada a ver com reciclagem ou energia solar (embora sejam importantes também). Ela se refere à capacidade de manter seu padrão de vida sem comprometer o futuro. Em termos simples: gastar hoje de forma que ainda tenha recursos para cobrir imprevistos, investir nos seus sonhos e ainda deixar um “colchão” para emergências. É como cuidar de um jardim – você precisa regar as plantas hoje, mas também garantir que o solo continue fértil para as próximas colheitas.
-
-## Como o FinMoovi traz clareza instantânea
-
-Imagine abrir o aplicativo FinMoovi e, em poucos segundos, ter uma foto da última nota fiscal do supermercado transformada em uma linha de gasto já classificada como “Alimentação”. Ou então, ao pagar a conta de luz, usar a função de voz para dizer “conta de luz” e o app registra tudo automaticamente. Essa **captura inteligente** elimina a necessidade de anotar manualmente cada despesa, evitando aquele erro de “esqueci de colocar” que costuma distorcer o panorama financeiro.
-
-![Como o FinMoovi traz clareza instantânea](/images/glossario/sustentabilidade-inline-3.webp)
+![What’s keeping you up at night?](/images/glossario/sustentabilidade-inline-1.webp)
 
 
 
-Além disso, o FinMoovi trabalha em **multi-moeda**, então se você compra um ingresso de cinema em dólares ou paga um curso em euros, o app converte tudo para a sua moeda base, mantendo o controle coerente. O **fluxo de caixa** (cash flow) aparece em gráficos simples, mostrando entradas e saídas ao longo do mês, enquanto os **relatórios** detalhados apontam quais categorias estão consumindo mais do que deveriam.
+## Understanding financial “sustainability”
 
-## Ferramentas que ajudam a manter a sustentabilidade
+Sustainability, in this context, has nothing to do with recycling or solar energy (although those are important too). It refers to the ability to maintain your standard of living without compromising the future. In simple terms: spend today in a way that you still have resources to cover unexpected events, invest in your dreams, and keep a “cushion” for emergencies. It’s like caring for a garden – you need to water the plants today, but also make sure the soil stays fertile for the next harvests.
 
-- **Planejamento mensal e metas**: defina quanto quer economizar para a viagem dos sonhos ou para a reserva de emergência. O app mostra o progresso em tempo real.
-- **Cartões de crédito e boletos**: registre cada fatura e receba alertas antes do vencimento, evitando juros que corroem o orçamento.
-- **Modo compras**: crie listas de supermercado, veja o total acumulado à medida que adiciona itens e evite surpresas no caixa.
-- **Lembretes e alertas de saldo**: notificação quando o saldo está próximo do limite definido, ajudando a cortar gastos desnecessários.
-- **Modo offline / PWA**: mesmo sem internet, você ainda pode registrar despesas; tudo sincroniza quando a conexão volta.
+## How FinMoovi provides instant clarity
 
-## Três dicas práticas para tornar seu dinheiro mais sustentável
+Imagine opening the FinMoovi app and, in a few seconds, having a photo of the latest supermarket receipt turned into a spending line already classified as “Food”. Or, when you pay the electricity bill, using the voice function to say “electricity bill” and the app records everything automatically. This **smart capture** eliminates the need to manually jot down each expense, avoiding that “I forgot to add it” error that usually distorts the financial picture.
 
-**Practical tip:** Reserve, logo na primeira entrada de salário, pelo menos 10 % para uma “caixa de sustentabilidade”. Esse dinheiro só sai para emergências ou metas de longo prazo, nunca para compras impulsivas.
+![How FinMoovi provides instant clarity](/images/glossario/sustentabilidade-inline-3.webp)
 
-**Practical tip:** Use o recurso de captura inteligente do FinMoovi para registrar **todas** as despesas menores (como aquele café diário). Quando você vê o total acumulado, fica mais fácil cortar o que não traz valor real.
 
-**Practical tip:** Aproveite o modo multi‑moeda ao viajar ou comprar online. Converta cada gasto na hora e compare com o que gastaria em moeda local; isso impede que a taxa de câmbio “surpreenda” seu orçamento.
 
-## Como a sustentabilidade se reflete no seu dia a dia
+In addition, FinMoovi works in **multi‑currency**, so if you buy a movie ticket in dollars or pay for a course in euros, the app converts everything to your base currency, keeping the control consistent. The **cash flow** appears in simple charts, showing inflows and outflows throughout the month, while the detailed **reports** point out which categories are consuming more than they should.
 
-Quando você tem clareza sobre cada centavo, as decisões ficam mais fáceis. Por exemplo, ao perceber que está gastando o equivalente a duas vezes o valor de um aluguel em entretenimento, o app mostrará o ponto de alerta e sugerirá reduzir esse item. Assim, você pode redirecionar esse dinheiro para a reserva de emergência, que costuma ser recomendada em torno de três a seis meses de despesas básicas.
+## Tools that help keep sustainability
 
-Outro benefício é a **previsibilidade**. Se o seu fluxo de caixa indica que, nos próximos três meses, haverá uma queda de renda (por exemplo, férias ou período de transição de emprego), você já pode ajustar as metas e cortar gastos antecipadamente, evitando apertos inesperados.
+- **Monthly planning and goals**: set how much you want to save for the trip of your dreams or for an emergency reserve. The app shows progress in real time.
+- **Credit cards and boletos**: record each invoice and receive alerts before the due date, avoiding interest that eats away at the budget.
+- **Shopping mode**: create grocery lists, see the accumulated total as you add items and avoid surprises at checkout.
+- **Balance reminders and alerts**: notification when the balance is close to the defined limit, helping cut unnecessary spending.
+- **Offline mode / PWA**: even without internet, you can still record expenses; everything syncs when the connection returns.
 
-## O papel da mentalidade sustentável
+## Three practical tips to make your money more sustainable
 
-Sustentabilidade financeira também depende de hábitos mentais. Trate cada compra como um investimento no seu bem‑estar futuro. Pergunte a si mesmo: “Esse gasto me aproxima da minha meta ou me afasta?” Essa simples reflexão, aliada ao feedback visual que o FinMoovi oferece, cria um ciclo positivo de autocontrole.
+**Practical tip:** Set aside, right at the first paycheck, at least 10 % for a “sustainability fund”. This money only leaves for emergencies or long‑term goals, never for impulse purchases.
 
-## Comece a transformar seu dinheiro agora
+**Practical tip:** Use FinMoovi’s smart capture feature to record **all** the smaller expenses (like that daily coffee). When you see the accumulated total, it’s easier to cut what doesn’t bring real value.
 
-A boa notícia é que você não precisa mudar tudo de uma vez. Comece com pequenos passos, usando as ferramentas que já vêm prontas no FinMoovi. Cada foto de recibo, cada alerta de saldo, cada meta mensal é um bloco que constrói a sua base de sustentabilidade financeira.
+**Practical tip:** Take advantage of the multi‑currency mode when traveling or shopping online. Convert each expense on the spot and compare it with what you’d spend in the local currency; this prevents the exchange rate from “surprising” your budget.
+
+## How sustainability shows up in your daily life
+
+When you have clarity on every cent, decisions become easier. For example, when you notice you’re spending the equivalent of twice the rent amount on entertainment, the app will show an alert point and suggest reducing that item. Then you can redirect that money to the emergency reserve, which is usually recommended at around three to six months of basic expenses.
+
+Another benefit is **predictability**. If your cash flow indicates that, over the next three months, there will be a drop in income (for example, vacation or a job transition period), you can already adjust goals and cut spending early, avoiding unexpected tight spots.
+
+## The role of a sustainable mindset
+
+Financial sustainability also depends on mental habits. Treat each purchase as an investment in your future well‑being. Ask yourself: “Does this expense bring me closer to my goal or push me away?” This simple reflection, combined with the visual feedback FinMoovi provides, creates a positive cycle of self‑control.
+
+## Start transforming your money now
+
+The good news is you don’t have to change everything at once. Start with small steps, using the tools that already come ready in FinMoovi. Every receipt photo, every balance alert, every monthly goal is a block that builds your foundation of financial sustainability.
 
 ## Start today
 
-1. Abra o FinMoovi e ative a **captura inteligente** nas configurações.  
-2. Tire uma foto da última nota fiscal que ainda está na sua mesa (pode ser do supermercado ou da farmácia).  
-3. Confirme a categoria sugerida pelo app e, se necessário, ajuste rapidamente.  
-4. Defina uma meta de “caixa de sustentabilidade” de 10 % do seu próximo salário.  
-5. Receba o primeiro relatório de fluxo de caixa ao final do dia e veja onde seu dinheiro está realmente indo.
+1. Open FinMoovi and enable **smart capture** in the settings.  
+2. Take a photo of the latest receipt that’s still on your table (it can be from the supermarket or the pharmacy).  
+3. Confirm the category suggested by the app and, if needed, adjust quickly.  
+4. Set a “sustainability fund” goal of 10 % of your next salary.  
+5. Receive the first cash‑flow report at the end of the day and see where your money is really going.
 
-Em menos de cinco minutos você já deu o primeiro passo para um futuro financeiro mais estável e consciente. Boa jornada!
+In less than five minutes you’ve already taken the first step toward a more stable and conscious financial future. Safe journey!
