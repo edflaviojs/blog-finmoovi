@@ -38,7 +38,7 @@ For anyone with accounts in dollars or euros, stability is good news: there’s 
 
 ### 2. Selic and Impact on Investments
 
-The basic interest rate – the Selic – remains at **13.75% per year** (according to the latest Copom decision on 09/12/2026). This high rate is still the main factor that attracts investors to fixed income, such as CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) and LCIs/LCAs. When the Selic is at this level, securities that pay close to this index usually offer more attractive returns than savings accounts and even some fixed‑income funds.
+The basic interest rate – the Selic – remains at **13.75% per year** (according to the latest Copom decision on 09/12/2026). This high rate is still the main factor that attracts investors to [fixed income](/en/glossario/en-fixed-income), such as CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) and LCIs/LCAs. When the Selic is at this level, securities that pay close to this index usually offer more attractive returns than savings accounts and even some fixed‑income funds.
 
 **What does this mean in practice?**  
 - If you have money saved in a fixed‑income fund that yields 12% per year, it may be time to compare it with a [CDB](/en/glossario/en-cdb) that pays 13% or more, since the difference can be significant over a few years.  
@@ -47,7 +47,7 @@ The basic interest rate – the Selic – remains at **13.75% per year** (accord
 ### 3. Practical Tip for Individual Investors
 
 **Use FinMoovi to monitor your investments in different currencies.**  
-The app lets you see, in real time, the value of your assets in reais, dollars and euros, all in one place. This makes decision‑making easier, especially if you have part of your portfolio in international stocks, overseas investment funds, or simply want to track the dollar’s movement to plan the purchase of an imported good.
+The app lets you see, in real time, the value of your assets in reais, dollars and euros, all in one place. This makes decision‑making easier, especially if you have part of your portfolio in international stocks, overseas [investment](/en/glossario/en-investment) funds, or simply want to track the dollar’s movement to plan the purchase of an imported good.
 
 **How to apply the tip now:**  
 1. Download FinMoovi (or open it if you already use it).  
@@ -59,9 +59,9 @@ With this simple routine, you avoid surprises and gain clarity on where your mon
 
 ### 4. What to Expect Next Week
 
-We don’t have new rate or inflation numbers to release yet, but a few points deserve attention:
+We don’t have new rate or [inflation](/en/glossario/en-inflation) numbers to release yet, but a few points deserve attention:
 
-- **Monetary policy decisions abroad:** While we can’t quote numbers, keep an eye on news about the Federal Reserve, the European Central Bank and the Bank of England. Moves by these institutions usually influence market sentiment and can bring some volatility to the dollar and euro, even though the current quote is stable.  
+- **Monetary policy decisions abroad:** While we can’t quote numbers, keep an eye on news about the Federal Reserve, the European Central Bank and the Bank of England. Moves by these institutions usually influence market sentiment and can bring some [volatility](/en/glossario/en-volatility) to the dollar and euro, even though the current quote is stable.  
 - **Domestic inflation indicators:** The IPCA accumulated over 12 months is at **4.63%** (according to the data from 10/01/2026). Any change in the inflation pace could eventually spark discussions about future Selic adjustments. Meanwhile, follow news on food, energy and transportation prices, which tend to react first.  
 - **Economic calendar:** Watch for earnings releases from Brazilian companies that operate abroad. Profits in dollars or euros can affect stock prices and, consequently, overall market sentiment.
 
