@@ -1246,5 +1246,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-11-23T15:11:06.882Z"
+  },
+  {
+    "situacao": "viagem-fim-de-ano",
+    "gancho": "faca-isso",
+    "turno": "manha",
+    "em": "2026-11-24T15:04:38.393Z"
   }
 ]
