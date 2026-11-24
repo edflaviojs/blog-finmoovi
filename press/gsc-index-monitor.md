@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-23T19:53:03.116Z
+Gerado em: 2026-11-24T19:21:36.430Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **860/1223** URLs indexadas
-- **362** não indexadas
-- **1** com erro na inspeção
-- **352** página(s) de conteúdo fora do índice há ≥7 dias
+- **542/1226** URLs indexadas
+- **236** não indexadas
+- **448** com erro na inspeção
+- **229** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,15 +16,15 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 357
+- Crawled - currently not indexed: 234
 - Discovered - currently not indexed: 2
-- URL is unknown to Google: 3
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
 - `https://blog.finmoovi.com/en/glossario/` — Crawled - currently not indexed (desde 2026-09-20)
 - `https://blog.finmoovi.com/es/glossario/` — Crawled - currently not indexed (desde 2026-09-19)
 - `https://blog.finmoovi.com/autor/ed-flavio/` — Crawled - currently not indexed (desde 2026-11-10)
+- `https://blog.finmoovi.com/en/author/ed-flavio/` — Crawled - currently not indexed (desde 2026-11-17)
 - `https://blog.finmoovi.com/es/autor/ed-flavio/` — Crawled - currently not indexed (desde 2026-10-17)
 - `https://blog.finmoovi.com/en/categorias/dicas/` — Crawled - currently not indexed (desde 2026-11-04)
 - `https://blog.finmoovi.com/en/categorias/ferramentas/` — Crawled - currently not indexed (desde 2026-10-29)
@@ -45,6 +45,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de/` — Crawled - currently not indexed (desde 2026-11-09)
+- `https://blog.finmoovi.com/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026/` — Crawled - currently not indexed (desde 2026-11-17)
 - `https://blog.finmoovi.com/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar/` — Crawled - currently not indexed (desde 2026-11-09)
 - `https://blog.finmoovi.com/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026/` — Crawled - currently not indexed (desde 2026-11-09)
 - `https://blog.finmoovi.com/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que/` — Crawled - currently not indexed (desde 2026-11-07)
@@ -70,5 +71,3 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel/` — Crawled - currently not indexed (desde 2026-11-07)
 - `https://blog.finmoovi.com/posts/evite-compras-por-impulso/` — Crawled - currently not indexed (desde 2026-11-10)
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
-- `https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-julho-2026/` — Crawled - currently not indexed (desde 2026-11-14)
-- `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Crawled - currently not indexed (desde 2026-08-07)
