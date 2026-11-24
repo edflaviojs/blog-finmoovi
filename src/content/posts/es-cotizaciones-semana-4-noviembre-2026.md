@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.95 — Semana 4 de noviembre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 4 de noviembre 2026."
 image: "/images/posts/cotacoes-semana-2026-11-23.webp"
+imageAlt: "Escritorio de madera con laptop, monitor, taza de café y ratón."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"
