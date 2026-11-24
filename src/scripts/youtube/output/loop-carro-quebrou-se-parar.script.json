@@ -1,0 +1,118 @@
+{
+  "slug": "loop-carro-quebrou-se-parar",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 1.200",
+  "situacao": "carro-quebrou",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de guardar dinheiro? Comigo, o carro quebrou.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, mil e duzentos reais de conserto, no meio do mês.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.200 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí caiu um atrás do outro.",
+      "durationSec": 2.17,
+      "shots": [
+        {
+          "anchor": "atrás",
+          "visual": {
+            "type": "statement",
+            "text": "Um boleto derrubou o outro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "outro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Sem dinheiro guardado, o carro quebra e a gente quebra junto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "A gente quebra junto"
+          }
+        },
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}

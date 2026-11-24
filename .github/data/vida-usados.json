@@ -1252,5 +1252,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-11-24T15:04:38.393Z"
+  },
+  {
+    "situacao": "carro-quebrou",
+    "gancho": "se-parar",
+    "turno": "noite",
+    "em": "2026-11-24T15:08:26.510Z"
   }
 ]
