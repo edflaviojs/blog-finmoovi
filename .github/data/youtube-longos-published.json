@@ -180,9 +180,15 @@
     ]
   },
   "renda-passiva-por-dia": {
-    "estado": "reservado",
+    "videoId": "MlKWVKM1FfM",
+    "uploadedAt": "2026-11-24T04:48:00.035Z",
     "publishAt": "2026-11-29T22:00:00.000Z",
-    "reservadoEm": "2026-11-24T03:55:54.832Z",
-    "corrida": "45322780949"
+    "titulo": "Renda passiva de R$ 50 por dia quanto guardar sem depender de sorte",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

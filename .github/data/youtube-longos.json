@@ -427,7 +427,7 @@
         "renda passiva com pouco dinheiro",
         "como juntar dinheiro todo mês"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "kt6PmR6VGgw",
         "title": "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
@@ -437,7 +437,9 @@
           "número concreto no título (\"50\")"
         ]
       },
-      "propostoEm": "2026-11-22T12:09:20.505Z"
+      "propostoEm": "2026-11-22T12:09:20.505Z",
+      "publicadoEm": "2026-11-24T04:48:00.036Z",
+      "videoId": "MlKWVKM1FfM"
     },
     {
       "slug": "habitos-para-economizar-dinheiro",
