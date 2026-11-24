@@ -1,0 +1,218 @@
+{
+  "slug": "renda-variavel",
+  "term": "Renda Variável",
+  "category": "investimentos",
+  "keyword": "Variável",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe o que acontece com o seu dinheiro quando entra em *renda variável*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe o que acontece com o seu dinheiro quando entra em renda variável? Ele sobe e desce todo dia. Eu levei um susto.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sobe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "statement",
+            "text": "Eu levei um choque"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Muita gente leva esse susto sozinha. Você ouve falar de ação, de fundo, de cripto. Ninguém explica. Aí coloca mil reais e fica olhando a tela.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "sozinha",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          }
+        },
+        {
+          "anchor": "ação",
+          "visual": {
+            "type": "statement",
+            "text": "Ação. Fundo. Cripto."
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí vem o dia ruim. Aqueles mil reais aparecem lá como setecentos. E ninguém te avisou que isso podia acontecer.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "ruim",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 700"
+          }
+        },
+        {
+          "anchor": "avisou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "slide"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Quando eu coloquei o meu no FinMoovi, ele separou o que eu tinha em renda variável do que tava guardado seguro. Foi aí que eu entendi o tamanho do risco.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Carteira dividida entre renda variável e reserva segura"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "tamanho",
+          "visual": {
+            "type": "statement",
+            "text": "Agora o risco ficou visível"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como o seu tá dividido? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "dividido",
+          "visual": {
+            "type": "statement",
+            "text": "Seu dinheiro, dividido"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Renda variável é dinheiro que sobe e desce, então só põe ali o que você não vai precisar tão cedo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "sobe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        },
+        {
+          "anchor": "precisar",
+          "visual": {
+            "type": "statement",
+            "text": "Só o que não vai precisar"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          },
+          "sfx": "pop"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja como seu dinheiro está dividido",
+    "target": "app"
+  },
+  "totalDurationSec": 53.8
+}
