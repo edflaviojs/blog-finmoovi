@@ -83,6 +83,30 @@
     }
   },
   {
+    "file": "es-cotizaciones-semana-4-noviembre-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-4-octubre-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -239,6 +263,33 @@
       ],
       "ptLeftovers": [
         "reais"
+      ]
+    }
+  },
+  {
+    "file": "en-quotes-week-4-november-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "CDI",
+        "Selic"
+      ],
+      "geoRefs": [
+        "no Brasil",
+        "brasileiras"
+      ],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "investimentos"
       ]
     }
   },
