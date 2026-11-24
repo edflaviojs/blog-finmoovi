@@ -6754,6 +6754,36 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-22"
+    },
+    "cotacoes-semana-2026-11-23.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
+    },
+    "cotacoes-semana-4-novembro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
+    },
+    "cotacoes-semana-4-novembro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
+    },
+    "en-quotes-week-4-november-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
+    },
+    "en-quotes-week-4-november-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
+    },
+    "es-cotizaciones-semana-4-noviembre-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-24"
     }
   },
   "corrigidas": {
@@ -7438,6 +7468,6 @@
       "motivo": "tem texto escrito (\"$100\")"
     }
   },
-  "totalAcervo": 1351,
-  "ultimaCorrida": "2026-11-23"
+  "totalAcervo": 1357,
+  "ultimaCorrida": "2026-11-24"
 }
