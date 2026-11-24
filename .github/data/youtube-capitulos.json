@@ -4087,8 +4087,95 @@
           "titulo": "Encerramento"
         }
       ]
+    },
+    {
+      "videoId": "NtquTRvQmts",
+      "title": "EDUCAÇÃO FINANCEIRA: A INDÚSTRIA QUE LUCRA COM A SUA CULPA",
+      "channel": "Rascunhos Econômicos",
+      "duracaoSeg": 6035,
+      "idioma": "pt",
+      "viewsPerDay": 6687,
+      "vistoEm": "2026-11-24",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Prólogo: A Ferrari e o que é uma boa vida financeira"
+        },
+        {
+          "seg": 173,
+          "titulo": "Ato I: O tamanho da indústria e a economia da atenção (Dados ANBIMA)"
+        },
+        {
+          "seg": 336,
+          "titulo": "Os três níveis de afirmação e a régua da evidência"
+        },
+        {
+          "seg": 518,
+          "titulo": "Ato II: A genealogia do enriquecimento — George Clason e os bancos (1926)"
+        },
+        {
+          "seg": 880,
+          "titulo": "Pai Rico, Pai Pobre: Identidade e o funil de produtos"
+        },
+        {
+          "seg": 1451,
+          "titulo": "O viés de sobrevivência e a narrativa dos vencedores"
+        },
+        {
+          "seg": 1662,
+          "titulo": "Os Segredos da Mente Milionária e a culpa como modelo de negócios"
+        },
+        {
+          "seg": 1920,
+          "titulo": "Ato III: A moralização do consumo — O mito do cafezinho"
+        },
+        {
+          "seg": 2123,
+          "titulo": "Utilidade e custo de oportunidade na economia"
+        },
+        {
+          "seg": 2328,
+          "titulo": "O carro é um passivo? Patrimônio, consumo e contexto"
+        },
+        {
+          "seg": 2556,
+          "titulo": "Escolha intertemporal e o ciclo de vida (o valor do tempo)"
+        },
+        {
+          "seg": 2876,
+          "titulo": "Quando a culpa gera demanda e certifica o caráter"
+        },
+        {
+          "seg": 3084,
+          "titulo": "Ato IV: A moralização social e a regulação do mercado (ANBIMA)"
+        },
+        {
+          "seg": 4101,
+          "titulo": "Políticas públicas, OCDE e Banco Central"
+        },
+        {
+          "seg": 4524,
+          "titulo": "Ato V: O que diz a ciência? Pseudociência e falseabilidade"
+        },
+        {
+          "seg": 4728,
+          "titulo": "O choque das evidências: Metanálises (2014 vs. 2022) e o experimento no Brasil"
+        },
+        {
+          "seg": 5242,
+          "titulo": "Epílogo: Renda, felicidade e o papel da teoria econômica (Keynes)"
+        },
+        {
+          "seg": 5586,
+          "titulo": "Síntese da investigação e conflito de interesses (Mea-culpa)"
+        },
+        {
+          "seg": 5929,
+          "titulo": "Encerramento: De volta à Ferrari"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-23T13:52:53.960Z",
-  "total": 73
+  "atualizadoEm": "2026-11-24T14:25:37.264Z",
+  "total": 74
 }
