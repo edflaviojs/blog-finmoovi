@@ -35370,5 +35370,114 @@
         "publicaEmBR": "24/11 às 19h31"
       }
     }
+  },
+  "loop-reforma-banheiro-nao-vai-acreditar": {
+    "midias": {
+      "video": {
+        "id": "21b1319c-33c5-4796-a23e-cae7f4a227d0",
+        "name": "sGr66JaEQI.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/sGr66JaEQI.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "423dc353-0d7a-491e-add8-bbb2bc24baad",
+        "name": "5PHY8knsi8.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/5PHY8knsi8.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "4b85a087-446c-477c-b566-48069ef4f707",
+        "name": "NbU5hg893q.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/NbU5hg893q.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-25T13:00:00.000Z",
+    "publicaEmBR": "25/11 às 10h00",
+    "agendadoEm": "2026-11-24T20:58:11.021Z",
+    "atualizadoEm": "2026-11-24T20:58:17.165Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmwv6fcyj003pmpd5w77jbx86",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-25T13:00:00.000Z",
+        "publicaEmBR": "25/11 às 10h00",
+        "midia": "o vídeo",
+        "caracteres": 634,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmwv6fdir003qmpd5uhijb6rg",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-25T13:12:00.000Z",
+        "publicaEmBR": "25/11 às 10h12",
+        "midia": "o vídeo",
+        "caracteres": 242,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmwv6fe7g003rmpd5feu86wfj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-25T13:26:00.000Z",
+        "publicaEmBR": "25/11 às 10h26",
+        "midia": "o vídeo",
+        "caracteres": 405,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmwv6ff35003smpd5kv4kl0t8",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-25T13:43:00.000Z",
+        "publicaEmBR": "25/11 às 10h43",
+        "midia": "o vídeo",
+        "caracteres": 411,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmwv6fflu003tmpd53xbgblfc",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-25T13:58:00.000Z",
+        "publicaEmBR": "25/11 às 10h58",
+        "midia": "o vídeo",
+        "caracteres": 129,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmwv6fgqe003umpd5f2pivtlf",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-25T14:31:00.000Z",
+        "publicaEmBR": "25/11 às 11h31",
+        "midia": "vídeo primeiro, capa depois: a ordem que o Pinterest exige",
+        "caracteres": 374,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmwv6fha8003vmpd5lkrmyw2z",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-25T14:47:00.000Z",
+        "publicaEmBR": "25/11 às 11h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 87,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmwv6fhou003wmpd5mrfjqpk8",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-25T13:05:00.000Z",
+        "publicaEmBR": "25/11 às 10h05"
+      },
+      "facebook-story": {
+        "postId": "cmwv6fhw9003xmpd5im6d8olm",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-25T13:31:00.000Z",
+        "publicaEmBR": "25/11 às 10h31"
+      }
+    }
   }
 }
