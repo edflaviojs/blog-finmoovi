@@ -1,0 +1,118 @@
+{
+  "slug": "loop-sair-do-aluguel-ninguem-fala",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "valor": "R$ 1.500",
+  "situacao": "sair-do-aluguel",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre aluguel, mas é real. Abri o boleto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do aluguel"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "mil e quinhentos reais todo mês, e nada ficou meu.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí caiu a ficha. O meu dinheiro tava escorrendo pelo ralo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "ficha",
+          "visual": {
+            "type": "statement",
+            "text": "Escorreu pelo ralo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala do aluguel, mas o boleto chega todo mês.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "O boleto chega todo mês"
+          }
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do aluguel"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
