@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-11-24T14:25:37.265Z",
+  "generatedAt": "2026-11-25T13:44:39.207Z",
   "periodDays": 60,
-  "totalAnalyzed": 90,
+  "totalAnalyzed": 105,
   "contagem": {
-    "shorts": 48,
-    "longos": 42,
-    "naoPortugues": 9
+    "shorts": 55,
+    "longos": 50,
+    "naoPortugues": 10
   },
   "aggregate": {
     "topPattern": "number-focused",
-    "avgViewsPerDay": 4791,
+    "avgViewsPerDay": 3985,
     "titleStats": {
-      "percentWithNumber": 43,
-      "percentWithQuestion": 24,
+      "percentWithNumber": 46,
+      "percentWithQuestion": 22,
       "avgWordCount": 11,
-      "avgCharCount": 66
+      "avgCharCount": 67
     },
     "pillarHeat": {
-      "mindset": 318261.91575112165,
-      "investimento": 81090.49744161645,
-      "controle": 26766.593887532374,
-      "ferramentas": 5051.474021147963
+      "mindset": 309780.8639372762,
+      "investimento": 80300.38877589538,
+      "controle": 23742.180743288765,
+      "ferramentas": 4598.11721840052
     },
     "sampleTitles": [
       "Como deixar seu filho rico",
       "Como R$ 100 viraram R$ 204.984: a mentalidade do vendedor de ovos",
       "Como ficar rico com a CRISE de 2027",
-      "AOS 20 é a hora de CONSTRUIR PATRIMÔNIO e GARANTIR sua LIBERDADE FINANCEIRA! DESCUBRA AGORA",
-      "Renda passiva real! Como fazer 50 todo dia sem trabalhar!"
+      "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
+      "AOS 20 é a hora de CONSTRUIR PATRIMÔNIO e GARANTIR sua LIBERDADE FINANCEIRA! DESCUBRA AGORA"
     ]
   },
   "estudoDeCapitulos": {
@@ -69,10 +69,10 @@
       "title": "Como deixar seu filho rico",
       "channel": "Dinheiro Falante",
       "publishedAt": "2026-11-11T01:14:10Z",
-      "views": 1167512,
-      "likes": 49898,
-      "viewsPerDay": 86165.72992893429,
-      "likeRatio": 0.04273874701073736,
+      "views": 1182711,
+      "likes": 50471,
+      "viewsPerDay": 81447.42983724162,
+      "likeRatio": 0.042673992209423944,
       "duracaoSeg": 48,
       "formato": "short",
       "idioma": "pt",
@@ -91,10 +91,10 @@
       "title": "Como R$ 100 viraram R$ 204.984: a mentalidade do vendedor de ovos",
       "channel": "Nosso Papo de Dinheiro",
       "publishedAt": "2026-11-11T19:42:26Z",
-      "views": 767331,
-      "likes": 46494,
-      "viewsPerDay": 60041.64347516238,
-      "likeRatio": 0.060591843676327424,
+      "views": 791165,
+      "likes": 47798,
+      "viewsPerDay": 57532.87757018969,
+      "likeRatio": 0.06041470489720855,
       "duracaoSeg": 171,
       "formato": "short",
       "idioma": "pt",
@@ -142,10 +142,10 @@
       "title": "Como ficar rico com a CRISE de 2027",
       "channel": "Raquel Mendes - Finanças",
       "publishedAt": "2026-11-02T21:30:00Z",
-      "views": 1128488,
-      "likes": 24452,
-      "viewsPerDay": 51991.40274932282,
-      "likeRatio": 0.021667930895144655,
+      "views": 1133662,
+      "likes": 24535,
+      "viewsPerDay": 49992.08591145685,
+      "likeRatio": 0.021642253158348786,
       "duracaoSeg": 807,
       "formato": "longo",
       "idioma": "pt",
@@ -185,36 +185,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "3swNdRxGeWk",
-      "title": "AOS 20 é a hora de CONSTRUIR PATRIMÔNIO e GARANTIR sua LIBERDADE FINANCEIRA! DESCUBRA AGORA",
-      "channel": "Reinaldo Zanon",
-      "publishedAt": "2026-11-21T22:00:17Z",
-      "views": 110214,
-      "likes": 2553,
-      "viewsPerDay": 41059.501791804556,
-      "likeRatio": 0.023164026348739725,
-      "duracaoSeg": 36,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 15,
-        "charCount": 91
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "kt6PmR6VGgw",
       "title": "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
       "channel": "Gêmeos Investem",
       "publishedAt": "2026-11-12T21:27:55Z",
-      "views": 402843,
-      "likes": 9107,
-      "viewsPerDay": 34411.25666546137,
-      "likeRatio": 0.02260682201254583,
+      "views": 407232,
+      "likes": 9229,
+      "viewsPerDay": 32120.473568786954,
+      "likeRatio": 0.022662757347163286,
       "duracaoSeg": 1197,
       "formato": "longo",
       "idioma": "pt",
@@ -250,14 +228,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "3swNdRxGeWk",
+      "title": "AOS 20 é a hora de CONSTRUIR PATRIMÔNIO e GARANTIR sua LIBERDADE FINANCEIRA! DESCUBRA AGORA",
+      "channel": "Reinaldo Zanon",
+      "publishedAt": "2026-11-21T22:00:17Z",
+      "views": 115146,
+      "likes": 2656,
+      "viewsPerDay": 31496.806187444687,
+      "likeRatio": 0.023066367915515952,
+      "duracaoSeg": 36,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 15,
+        "charCount": 91
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "GoAJ04D_qxM",
       "title": "Educação financeira: Ele ensina a filha antes de farmar aura",
       "channel": "Natalia Lee",
       "publishedAt": "2026-10-26T23:37:18Z",
-      "views": 362828,
+      "views": 362835,
       "likes": 19299,
-      "viewsPerDay": 12678.811389161305,
-      "likeRatio": 0.053190492464749134,
+      "viewsPerDay": 12262.733855600902,
+      "likeRatio": 0.05318946628632849,
       "duracaoSeg": 66,
       "formato": "short",
       "idioma": "pt",
@@ -276,10 +276,10 @@
       "title": "Mãe ensina educação financeira e filho trabalha para pagar celular de R$ 3 mil",
       "channel": "Rádio Paiquerê FM 98.9",
       "publishedAt": "2026-10-01T18:04:59Z",
-      "views": 619907,
-      "likes": 15943,
-      "viewsPerDay": 11512.237933521772,
-      "likeRatio": 0.025718373885115026,
+      "views": 619912,
+      "likes": 15942,
+      "viewsPerDay": 11308.300325913906,
+      "likeRatio": 0.02571655331724503,
       "duracaoSeg": 65,
       "formato": "short",
       "idioma": "pt",
@@ -298,10 +298,10 @@
       "title": "Educação financeira pra quem ganha R$ 1.800? Guardar o quê? | Raul Sena",
       "channel": "Cortes do Raul Sena",
       "publishedAt": "2026-10-31T10:00:16Z",
-      "views": 246496,
-      "likes": 14700,
-      "viewsPerDay": 10192.413409985646,
-      "likeRatio": 0.05963585615993769,
+      "views": 260531,
+      "likes": 15773,
+      "viewsPerDay": 10356.692613323168,
+      "likeRatio": 0.06054173975457815,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -316,14 +316,36 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "aFzYvAipJF4",
+      "title": "Como Viver Bem Com Pouco e Fazer o Dinheiro Multiplicar",
+      "channel": "MANUAL DO CONHECIMENTO",
+      "publishedAt": "2026-11-23T21:03:16Z",
+      "views": 13476,
+      "likes": 346,
+      "viewsPerDay": 7948.628027457133,
+      "likeRatio": 0.025675274562184623,
+      "duracaoSeg": 809,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 55
+      },
+      "pillar": "investimento"
+    },
+    {
       "videoId": "1eAhg_j_XUc",
       "title": "UM IMPREVISTO PODE TE QUEBRAR?! 🚨💸 #shorts #dinheiro #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-11-18T21:30:31Z",
-      "views": 50385,
-      "likes": 2948,
-      "viewsPerDay": 8831.84717757977,
-      "likeRatio": 0.05850947702689292,
+      "views": 50565,
+      "likes": 2963,
+      "viewsPerDay": 7573.612398131447,
+      "likeRatio": 0.05859784435874617,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -342,10 +364,10 @@
       "title": "O que são ações? Bolsa de valores explicada para iniciantes #shorts",
       "channel": "Beto Econômico",
       "publishedAt": "2026-11-09T21:30:19Z",
-      "views": 115436,
-      "likes": 3391,
-      "viewsPerDay": 7850.089707830076,
-      "likeRatio": 0.029375584739595968,
+      "views": 115545,
+      "likes": 3397,
+      "viewsPerDay": 7370.538496334657,
+      "likeRatio": 0.0293998009433554,
       "duracaoSeg": 101,
       "formato": "short",
       "idioma": "pt",
@@ -364,10 +386,10 @@
       "title": "4 REGRAS PARA FICAR RICO MESMO GANHANDO POUCO | Napoleon Hill",
       "channel": "Biblioteca Mental",
       "publishedAt": "2026-10-28T21:30:02Z",
-      "views": 192150,
-      "likes": 9738,
-      "viewsPerDay": 7195.212341032157,
-      "likeRatio": 0.050679156908665104,
+      "views": 195209,
+      "likes": 9830,
+      "viewsPerDay": 7053.16208548459,
+      "likeRatio": 0.05035628480244251,
       "duracaoSeg": 126,
       "formato": "short",
       "idioma": "pt",
@@ -386,10 +408,10 @@
       "title": "GANHOU? Veja como receber seu PRÊMIO MILIONÁRIO na Caixa! DICAS IMPORTANTES 2026!",
       "channel": "Rafael Candido",
       "publishedAt": "2026-11-20T13:45:07Z",
-      "views": 27724,
-      "likes": 2315,
-      "viewsPerDay": 6882.643633195272,
-      "likeRatio": 0.08350165921223489,
+      "views": 28736,
+      "likes": 2421,
+      "viewsPerDay": 5747.599897245628,
+      "likeRatio": 0.08424972160356348,
       "duracaoSeg": 1092,
       "formato": "longo",
       "idioma": "pt",
@@ -453,14 +475,113 @@
       "pillar": "controle"
     },
     {
+      "videoId": "oPfF6z5uuC0",
+      "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
+      "channel": "lore.invest",
+      "publishedAt": "2026-10-05T15:00:19Z",
+      "views": 270509,
+      "likes": 8170,
+      "viewsPerDay": 5309.570485209812,
+      "likeRatio": 0.030202322288722373,
+      "duracaoSeg": 898,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 60
+      },
+      "pillar": "investimento"
+    },
+    {
+      "videoId": "SaNSC2rMP7o",
+      "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
+      "channel": "Gêmeos Investem",
+      "publishedAt": "2026-10-20T22:45:46Z",
+      "views": 162373,
+      "likes": 3482,
+      "viewsPerDay": 4557.940135787885,
+      "likeRatio": 0.0214444519716948,
+      "duracaoSeg": 1467,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 73,
+          "titulo": "Furadas que você acredita"
+        },
+        {
+          "seg": 285,
+          "titulo": "Produzir conteúdo vai continuar funcionando"
+        },
+        {
+          "seg": 362,
+          "titulo": "Criando um App"
+        },
+        {
+          "seg": 811,
+          "titulo": "Desenvolvendo games do 0"
+        },
+        {
+          "seg": 1029,
+          "titulo": "Criador de conteúdo UGC"
+        },
+        {
+          "seg": 1190,
+          "titulo": "Criando um livro"
+        },
+        {
+          "seg": 1423,
+          "titulo": "Conclusão"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 12,
+        "charCount": 61
+      },
+      "pillar": "investimento"
+    },
+    {
+      "videoId": "0nBcKSH6L_4",
+      "title": "DÁ PRA FICAR RICO INVESTINDO POUCO? [desabafo]",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-11-09T23:15:34Z",
+      "views": 69154,
+      "likes": 2233,
+      "viewsPerDay": 4431.950983138344,
+      "likeRatio": 0.03229025074471469,
+      "duracaoSeg": 1055,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": true,
+        "hasEmoji": false,
+        "wordCount": 7,
+        "charCount": 46
+      },
+      "pillar": "investimento"
+    },
+    {
       "videoId": "NtquTRvQmts",
       "title": "EDUCAÇÃO FINANCEIRA: A INDÚSTRIA QUE LUCRA COM A SUA CULPA",
       "channel": "Rascunhos Econômicos",
       "publishedAt": "2026-11-23T12:21:49Z",
-      "views": 7262,
-      "likes": 421,
-      "viewsPerDay": 6687.147635086768,
-      "likeRatio": 0.057973010190030295,
+      "views": 8897,
+      "likes": 496,
+      "viewsPerDay": 4324.154191651377,
+      "likeRatio": 0.05574912891986063,
       "duracaoSeg": 6035,
       "formato": "longo",
       "idioma": "pt",
@@ -552,135 +673,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "oPfF6z5uuC0",
-      "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
-      "channel": "lore.invest",
-      "publishedAt": "2026-10-05T15:00:19Z",
-      "views": 269322,
-      "likes": 8138,
-      "viewsPerDay": 5389.038786612157,
-      "likeRatio": 0.030216618026006045,
-      "duracaoSeg": 898,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 60
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "0nBcKSH6L_4",
-      "title": "DÁ PRA FICAR RICO INVESTINDO POUCO? [desabafo]",
-      "channel": "Nerds de Negócios",
-      "publishedAt": "2026-11-09T23:15:34Z",
-      "views": 68659,
-      "likes": 2219,
-      "viewsPerDay": 4692.397900524329,
-      "likeRatio": 0.03231914242852357,
-      "duracaoSeg": 1055,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 7,
-        "charCount": 46
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "SaNSC2rMP7o",
-      "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
-      "channel": "Gêmeos Investem",
-      "publishedAt": "2026-10-20T22:45:46Z",
-      "views": 161186,
-      "likes": 3459,
-      "viewsPerDay": 4651.475656258277,
-      "likeRatio": 0.021459680121102328,
-      "duracaoSeg": 1467,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "Introdução"
-        },
-        {
-          "seg": 73,
-          "titulo": "Furadas que você acredita"
-        },
-        {
-          "seg": 285,
-          "titulo": "Produzir conteúdo vai continuar funcionando"
-        },
-        {
-          "seg": 362,
-          "titulo": "Criando um App"
-        },
-        {
-          "seg": 811,
-          "titulo": "Desenvolvendo games do 0"
-        },
-        {
-          "seg": 1029,
-          "titulo": "Criador de conteúdo UGC"
-        },
-        {
-          "seg": 1190,
-          "titulo": "Criando um livro"
-        },
-        {
-          "seg": 1423,
-          "titulo": "Conclusão"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 61
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "85X7QpB0Smk",
-      "title": "RAPHINHA PEDIU PRA SAIR E FOI EXPULSO DO BANCO! Japão 3 x 2 Brasil!",
-      "channel": "Rafael Oliveira",
-      "publishedAt": "2026-11-15T03:00:39Z",
-      "views": 38027,
-      "likes": 829,
-      "viewsPerDay": 4013.1209067567834,
-      "likeRatio": 0.02180029978699345,
-      "duracaoSeg": 105,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 14,
-        "charCount": 67
-      },
-      "pillar": "controle"
-    },
-    {
       "videoId": "iIiYGO2VkpI",
       "title": "SE TIVER 100 REAIS NA CONTA É SÓ INVESTIR ASSIM - PRIMO POBRE",
       "channel": "Corts_podcast",
       "publishedAt": "2026-10-20T17:25:42Z",
-      "views": 134564,
-      "likes": 5011,
-      "viewsPerDay": 3858.4739633380004,
-      "likeRatio": 0.03723878600517226,
+      "views": 137027,
+      "likes": 5083,
+      "viewsPerDay": 3822.607395634617,
+      "likeRatio": 0.037094879111416,
       "duracaoSeg": 888,
       "formato": "longo",
       "idioma": "pt",
@@ -695,36 +695,36 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "aFzYvAipJF4",
-      "title": "Como Viver Bem Com Pouco e Fazer o Dinheiro Multiplicar",
-      "channel": "MANUAL DO CONHECIMENTO",
-      "publishedAt": "2026-11-23T21:03:16Z",
-      "views": 3687,
-      "likes": 157,
-      "viewsPerDay": 3687,
-      "likeRatio": 0.042582045023053974,
-      "duracaoSeg": 809,
-      "formato": "longo",
+      "videoId": "85X7QpB0Smk",
+      "title": "RAPHINHA PEDIU PRA SAIR E FOI EXPULSO DO BANCO! Japão 3 x 2 Brasil!",
+      "channel": "Rafael Oliveira",
+      "publishedAt": "2026-11-15T03:00:39Z",
+      "views": 38036,
+      "likes": 830,
+      "viewsPerDay": 3640.7781639882924,
+      "likeRatio": 0.021821432327268905,
+      "duracaoSeg": 105,
+      "formato": "short",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 55
+        "wordCount": 14,
+        "charCount": 67
       },
-      "pillar": "investimento"
+      "pillar": "controle"
     },
     {
       "videoId": "47HnATJ2vVE",
       "title": "INVESTIMENTOS IGUAIS… RESULTADOS DIFERENTES?! 💸🤔 #shorts #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-11-23T21:21:17Z",
-      "views": 3607,
-      "likes": 355,
-      "viewsPerDay": 3607,
-      "likeRatio": 0.09841973939561963,
+      "views": 5773,
+      "likes": 560,
+      "viewsPerDay": 3430.423527532176,
+      "likeRatio": 0.09700329118309371,
       "duracaoSeg": 83,
       "formato": "short",
       "idioma": "pt",
@@ -745,10 +745,10 @@
       "title": "Como deixar seu filho rico",
       "channel": "Dinheiro Falante",
       "publishedAt": "2026-11-11T01:14:10Z",
-      "views": 1167512,
-      "likes": 49898,
-      "viewsPerDay": 86165.72992893429,
-      "likeRatio": 0.04273874701073736,
+      "views": 1182711,
+      "likes": 50471,
+      "viewsPerDay": 81447.42983724162,
+      "likeRatio": 0.042673992209423944,
       "duracaoSeg": 48,
       "formato": "short",
       "idioma": "pt",
@@ -767,10 +767,10 @@
       "title": "Como R$ 100 viraram R$ 204.984: a mentalidade do vendedor de ovos",
       "channel": "Nosso Papo de Dinheiro",
       "publishedAt": "2026-11-11T19:42:26Z",
-      "views": 767331,
-      "likes": 46494,
-      "viewsPerDay": 60041.64347516238,
-      "likeRatio": 0.060591843676327424,
+      "views": 791165,
+      "likes": 47798,
+      "viewsPerDay": 57532.87757018969,
+      "likeRatio": 0.06041470489720855,
       "duracaoSeg": 171,
       "formato": "short",
       "idioma": "pt",
@@ -818,10 +818,10 @@
       "title": "AOS 20 é a hora de CONSTRUIR PATRIMÔNIO e GARANTIR sua LIBERDADE FINANCEIRA! DESCUBRA AGORA",
       "channel": "Reinaldo Zanon",
       "publishedAt": "2026-11-21T22:00:17Z",
-      "views": 110214,
-      "likes": 2553,
-      "viewsPerDay": 41059.501791804556,
-      "likeRatio": 0.023164026348739725,
+      "views": 115146,
+      "likes": 2656,
+      "viewsPerDay": 31496.806187444687,
+      "likeRatio": 0.023066367915515952,
       "duracaoSeg": 36,
       "formato": "short",
       "idioma": "pt",
@@ -840,10 +840,10 @@
       "title": "Educação financeira: Ele ensina a filha antes de farmar aura",
       "channel": "Natalia Lee",
       "publishedAt": "2026-10-26T23:37:18Z",
-      "views": 362828,
+      "views": 362835,
       "likes": 19299,
-      "viewsPerDay": 12678.811389161305,
-      "likeRatio": 0.053190492464749134,
+      "viewsPerDay": 12262.733855600902,
+      "likeRatio": 0.05318946628632849,
       "duracaoSeg": 66,
       "formato": "short",
       "idioma": "pt",
@@ -862,10 +862,10 @@
       "title": "Mãe ensina educação financeira e filho trabalha para pagar celular de R$ 3 mil",
       "channel": "Rádio Paiquerê FM 98.9",
       "publishedAt": "2026-10-01T18:04:59Z",
-      "views": 619907,
-      "likes": 15943,
-      "viewsPerDay": 11512.237933521772,
-      "likeRatio": 0.025718373885115026,
+      "views": 619912,
+      "likes": 15942,
+      "viewsPerDay": 11308.300325913906,
+      "likeRatio": 0.02571655331724503,
       "duracaoSeg": 65,
       "formato": "short",
       "idioma": "pt",
@@ -884,10 +884,10 @@
       "title": "Educação financeira pra quem ganha R$ 1.800? Guardar o quê? | Raul Sena",
       "channel": "Cortes do Raul Sena",
       "publishedAt": "2026-10-31T10:00:16Z",
-      "views": 246496,
-      "likes": 14700,
-      "viewsPerDay": 10192.413409985646,
-      "likeRatio": 0.05963585615993769,
+      "views": 260531,
+      "likes": 15773,
+      "viewsPerDay": 10356.692613323168,
+      "likeRatio": 0.06054173975457815,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -906,10 +906,10 @@
       "title": "UM IMPREVISTO PODE TE QUEBRAR?! 🚨💸 #shorts #dinheiro #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-11-18T21:30:31Z",
-      "views": 50385,
-      "likes": 2948,
-      "viewsPerDay": 8831.84717757977,
-      "likeRatio": 0.05850947702689292,
+      "views": 50565,
+      "likes": 2963,
+      "viewsPerDay": 7573.612398131447,
+      "likeRatio": 0.05859784435874617,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -928,10 +928,10 @@
       "title": "O que são ações? Bolsa de valores explicada para iniciantes #shorts",
       "channel": "Beto Econômico",
       "publishedAt": "2026-11-09T21:30:19Z",
-      "views": 115436,
-      "likes": 3391,
-      "viewsPerDay": 7850.089707830076,
-      "likeRatio": 0.029375584739595968,
+      "views": 115545,
+      "likes": 3397,
+      "viewsPerDay": 7370.538496334657,
+      "likeRatio": 0.0293998009433554,
       "duracaoSeg": 101,
       "formato": "short",
       "idioma": "pt",
@@ -950,10 +950,10 @@
       "title": "4 REGRAS PARA FICAR RICO MESMO GANHANDO POUCO | Napoleon Hill",
       "channel": "Biblioteca Mental",
       "publishedAt": "2026-10-28T21:30:02Z",
-      "views": 192150,
-      "likes": 9738,
-      "viewsPerDay": 7195.212341032157,
-      "likeRatio": 0.050679156908665104,
+      "views": 195209,
+      "likes": 9830,
+      "viewsPerDay": 7053.16208548459,
+      "likeRatio": 0.05035628480244251,
       "duracaoSeg": 126,
       "formato": "short",
       "idioma": "pt",
@@ -972,10 +972,10 @@
       "title": "RAPHINHA PEDIU PRA SAIR E FOI EXPULSO DO BANCO! Japão 3 x 2 Brasil!",
       "channel": "Rafael Oliveira",
       "publishedAt": "2026-11-15T03:00:39Z",
-      "views": 38027,
-      "likes": 829,
-      "viewsPerDay": 4013.1209067567834,
-      "likeRatio": 0.02180029978699345,
+      "views": 38036,
+      "likes": 830,
+      "viewsPerDay": 3640.7781639882924,
+      "likeRatio": 0.021821432327268905,
       "duracaoSeg": 105,
       "formato": "short",
       "idioma": "pt",
@@ -996,10 +996,10 @@
       "title": "Como ficar rico com a CRISE de 2027",
       "channel": "Raquel Mendes - Finanças",
       "publishedAt": "2026-11-02T21:30:00Z",
-      "views": 1128488,
-      "likes": 24452,
-      "viewsPerDay": 51991.40274932282,
-      "likeRatio": 0.021667930895144655,
+      "views": 1133662,
+      "likes": 24535,
+      "viewsPerDay": 49992.08591145685,
+      "likeRatio": 0.021642253158348786,
       "duracaoSeg": 807,
       "formato": "longo",
       "idioma": "pt",
@@ -1043,10 +1043,10 @@
       "title": "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
       "channel": "Gêmeos Investem",
       "publishedAt": "2026-11-12T21:27:55Z",
-      "views": 402843,
-      "likes": 9107,
-      "viewsPerDay": 34411.25666546137,
-      "likeRatio": 0.02260682201254583,
+      "views": 407232,
+      "likes": 9229,
+      "viewsPerDay": 32120.473568786954,
+      "likeRatio": 0.022662757347163286,
       "duracaoSeg": 1197,
       "formato": "longo",
       "idioma": "pt",
@@ -1082,14 +1082,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "aFzYvAipJF4",
+      "title": "Como Viver Bem Com Pouco e Fazer o Dinheiro Multiplicar",
+      "channel": "MANUAL DO CONHECIMENTO",
+      "publishedAt": "2026-11-23T21:03:16Z",
+      "views": 13476,
+      "likes": 346,
+      "viewsPerDay": 7948.628027457133,
+      "likeRatio": 0.025675274562184623,
+      "duracaoSeg": 809,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 55
+      },
+      "pillar": "investimento"
+    },
+    {
       "videoId": "3FZexvMzfNo",
       "title": "GANHOU? Veja como receber seu PRÊMIO MILIONÁRIO na Caixa! DICAS IMPORTANTES 2026!",
       "channel": "Rafael Candido",
       "publishedAt": "2026-11-20T13:45:07Z",
-      "views": 27724,
-      "likes": 2315,
-      "viewsPerDay": 6882.643633195272,
-      "likeRatio": 0.08350165921223489,
+      "views": 28736,
+      "likes": 2421,
+      "viewsPerDay": 5747.599897245628,
+      "likeRatio": 0.08424972160356348,
       "duracaoSeg": 1092,
       "formato": "longo",
       "idioma": "pt",
@@ -1153,14 +1175,113 @@
       "pillar": "controle"
     },
     {
+      "videoId": "oPfF6z5uuC0",
+      "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
+      "channel": "lore.invest",
+      "publishedAt": "2026-10-05T15:00:19Z",
+      "views": 270509,
+      "likes": 8170,
+      "viewsPerDay": 5309.570485209812,
+      "likeRatio": 0.030202322288722373,
+      "duracaoSeg": 898,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 60
+      },
+      "pillar": "investimento"
+    },
+    {
+      "videoId": "SaNSC2rMP7o",
+      "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
+      "channel": "Gêmeos Investem",
+      "publishedAt": "2026-10-20T22:45:46Z",
+      "views": 162373,
+      "likes": 3482,
+      "viewsPerDay": 4557.940135787885,
+      "likeRatio": 0.0214444519716948,
+      "duracaoSeg": 1467,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 73,
+          "titulo": "Furadas que você acredita"
+        },
+        {
+          "seg": 285,
+          "titulo": "Produzir conteúdo vai continuar funcionando"
+        },
+        {
+          "seg": 362,
+          "titulo": "Criando um App"
+        },
+        {
+          "seg": 811,
+          "titulo": "Desenvolvendo games do 0"
+        },
+        {
+          "seg": 1029,
+          "titulo": "Criador de conteúdo UGC"
+        },
+        {
+          "seg": 1190,
+          "titulo": "Criando um livro"
+        },
+        {
+          "seg": 1423,
+          "titulo": "Conclusão"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 12,
+        "charCount": 61
+      },
+      "pillar": "investimento"
+    },
+    {
+      "videoId": "0nBcKSH6L_4",
+      "title": "DÁ PRA FICAR RICO INVESTINDO POUCO? [desabafo]",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-11-09T23:15:34Z",
+      "views": 69154,
+      "likes": 2233,
+      "viewsPerDay": 4431.950983138344,
+      "likeRatio": 0.03229025074471469,
+      "duracaoSeg": 1055,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": true,
+        "hasEmoji": false,
+        "wordCount": 7,
+        "charCount": 46
+      },
+      "pillar": "investimento"
+    },
+    {
       "videoId": "NtquTRvQmts",
       "title": "EDUCAÇÃO FINANCEIRA: A INDÚSTRIA QUE LUCRA COM A SUA CULPA",
       "channel": "Rascunhos Econômicos",
       "publishedAt": "2026-11-23T12:21:49Z",
-      "views": 7262,
-      "likes": 421,
-      "viewsPerDay": 6687.147635086768,
-      "likeRatio": 0.057973010190030295,
+      "views": 8897,
+      "likes": 496,
+      "viewsPerDay": 4324.154191651377,
+      "likeRatio": 0.05574912891986063,
       "duracaoSeg": 6035,
       "formato": "longo",
       "idioma": "pt",
@@ -1252,113 +1373,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "oPfF6z5uuC0",
-      "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
-      "channel": "lore.invest",
-      "publishedAt": "2026-10-05T15:00:19Z",
-      "views": 269322,
-      "likes": 8138,
-      "viewsPerDay": 5389.038786612157,
-      "likeRatio": 0.030216618026006045,
-      "duracaoSeg": 898,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 60
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "0nBcKSH6L_4",
-      "title": "DÁ PRA FICAR RICO INVESTINDO POUCO? [desabafo]",
-      "channel": "Nerds de Negócios",
-      "publishedAt": "2026-11-09T23:15:34Z",
-      "views": 68659,
-      "likes": 2219,
-      "viewsPerDay": 4692.397900524329,
-      "likeRatio": 0.03231914242852357,
-      "duracaoSeg": 1055,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 7,
-        "charCount": 46
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "SaNSC2rMP7o",
-      "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
-      "channel": "Gêmeos Investem",
-      "publishedAt": "2026-10-20T22:45:46Z",
-      "views": 161186,
-      "likes": 3459,
-      "viewsPerDay": 4651.475656258277,
-      "likeRatio": 0.021459680121102328,
-      "duracaoSeg": 1467,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "Introdução"
-        },
-        {
-          "seg": 73,
-          "titulo": "Furadas que você acredita"
-        },
-        {
-          "seg": 285,
-          "titulo": "Produzir conteúdo vai continuar funcionando"
-        },
-        {
-          "seg": 362,
-          "titulo": "Criando um App"
-        },
-        {
-          "seg": 811,
-          "titulo": "Desenvolvendo games do 0"
-        },
-        {
-          "seg": 1029,
-          "titulo": "Criador de conteúdo UGC"
-        },
-        {
-          "seg": 1190,
-          "titulo": "Criando um livro"
-        },
-        {
-          "seg": 1423,
-          "titulo": "Conclusão"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 61
-      },
-      "pillar": "investimento"
-    },
-    {
       "videoId": "iIiYGO2VkpI",
       "title": "SE TIVER 100 REAIS NA CONTA É SÓ INVESTIR ASSIM - PRIMO POBRE",
       "channel": "Corts_podcast",
       "publishedAt": "2026-10-20T17:25:42Z",
-      "views": 134564,
-      "likes": 5011,
-      "viewsPerDay": 3858.4739633380004,
-      "likeRatio": 0.03723878600517226,
+      "views": 137027,
+      "likes": 5083,
+      "viewsPerDay": 3822.607395634617,
+      "likeRatio": 0.037094879111416,
       "duracaoSeg": 888,
       "formato": "longo",
       "idioma": "pt",
@@ -1373,48 +1395,26 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "aFzYvAipJF4",
-      "title": "Como Viver Bem Com Pouco e Fazer o Dinheiro Multiplicar",
-      "channel": "MANUAL DO CONHECIMENTO",
-      "publishedAt": "2026-11-23T21:03:16Z",
-      "views": 3687,
-      "likes": 157,
-      "viewsPerDay": 3687,
-      "likeRatio": 0.042582045023053974,
-      "duracaoSeg": 809,
+      "videoId": "fUhCwGl4oYs",
+      "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
+      "channel": "Sabedoria  Financeira",
+      "publishedAt": "2026-11-04T21:00:10Z",
+      "views": 66462,
+      "likes": 1337,
+      "viewsPerDay": 3211.105173609504,
+      "likeRatio": 0.0201167584484367,
+      "duracaoSeg": 1325,
       "formato": "longo",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": false,
         "hasEmoji": false,
         "wordCount": 10,
-        "charCount": 55
+        "charCount": 70
       },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "lmKh5_fWcNE",
-      "title": "Como começar a viver de dividendos mesmo com pouco dinheiro?",
-      "channel": "AGF",
-      "publishedAt": "2026-11-18T21:00:11Z",
-      "views": 20014,
-      "likes": 857,
-      "viewsPerDay": 3495.2963803860043,
-      "likeRatio": 0.04282002598181273,
-      "duracaoSeg": 1981,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 60
-      },
-      "pillar": "investimento"
+      "pillar": "mindset"
     }
   ]
 }
