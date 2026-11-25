@@ -1,0 +1,220 @@
+{
+  "slug": "kw-teste-3-truques-caseiros-que-realmente-cortam-a-conta-de-luz",
+  "term": "Teste: 3 truques caseiros que realmente cortam a conta de luz",
+  "category": "mindset",
+  "keyword": "cortei",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto você paga de luz todo mês *sem precisar*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto você paga de luz todo mês sem precisar? A minha era duzentos e cinquenta reais. Cortei sessenta com três mudanças simples.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "todo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 250"
+          }
+        },
+        {
+          "anchor": "sessenta",
+          "visual": {
+            "type": "number",
+            "text": "- R$ 60"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "São três coisas que qualquer um faz num sábado. Troquei as lâmpadas, botei tomada inteligente nos aparelhos e ajustei o ar-condicionado.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 ajustes, 1 sábado"
+          }
+        },
+        {
+          "anchor": "lâmpadas",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "ajustei",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E a conta do mês seguinte veio cento e noventa reais. Antes eram duzentos e cinquenta. Sessenta reais a menos, todo mês.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "veio",
+          "visual": {
+            "type": "number",
+            "text": "R$ 190"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Antes",
+          "visual": {
+            "type": "number",
+            "text": "R$ 250"
+          }
+        },
+        {
+          "anchor": "Sessenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 60,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei as duas contas no FinMoovi e ele somou o ano pra mim. Deu setecentos e vinte reais no meu bolso.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "duas",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "soma das duas contas no ano"
+          }
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 720"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto a sua conta pode cair? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Muita gente paga luz sem precisar, e na minha casa eram sessenta reais por mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        },
+        {
+          "anchor": "sessenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 60 / mês"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle fecha o buraco"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto sua conta pode cair",
+    "target": "app"
+  },
+  "totalDurationSec": 47.5
+}
