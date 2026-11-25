@@ -1264,5 +1264,11 @@
     "gancho": "ninguem-fala",
     "turno": "manha",
     "em": "2026-11-25T14:47:13.889Z"
+  },
+  {
+    "situacao": "pagar-o-minimo",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-11-25T14:49:50.140Z"
   }
 ]
