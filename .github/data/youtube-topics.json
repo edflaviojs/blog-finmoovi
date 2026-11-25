@@ -897,6 +897,36 @@
       "glossaryRef": "economia-de-agua",
       "status": "pending",
       "sourceKeyword": "de pessoas economizando água"
+    },
+    {
+      "id": "kw-3-erros-que-custam-r-200-na-conta-de-agua",
+      "theme": "3 erros que custam R$200 na conta de água",
+      "angle": "Mostra, em cenas rápidas de casa, três hábitos que fazem a conta subir – deixar a torneira aberta ao escovar os dentes, lavar roupa em ciclos curtos e usar chuveiro elétrico sem timer. Cada erro é ilustrado com o gasto mensal em reais, e termina com a dica prática de como cortar esse desperdício e economizar até R$200 por mês.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia-de-agua",
+      "status": "pending",
+      "sourceKeyword": "economizando água"
+    },
+    {
+      "id": "kw-sua-conta-de-luz-pode-cair-r-150-em-30-dias",
+      "theme": "Sua conta de luz pode cair R$150 em 30 dias",
+      "angle": "Mostre 3 hábitos do dia a dia que cortam energia e geram até R$150 de economia na conta de luz em um mês, com exemplos práticos como trocar lâmpada, desligar carregador e usar timer na tomada.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": null,
+      "status": "pending",
+      "sourceKeyword": "economizar energia"
+    },
+    {
+      "id": "kw-teste-3-truques-caseiros-que-realmente-cortam-a-conta-de-luz",
+      "theme": "Teste: 3 truques caseiros que realmente cortam a conta de luz",
+      "angle": "Mostro, em 45 s, três mudanças simples que fiz em casa (trocar lâmpada, usar tomada inteligente e ajustar ar‑condicionado). Apresento o gasto antes (R$ 250/mês) e depois (R$ 190/mês), provando que funcionam na prática, sem entrar em teoria.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia-de-energia",
+      "status": "pending",
+      "sourceKeyword": "para economizar energia funciona"
     }
   ]
 }
