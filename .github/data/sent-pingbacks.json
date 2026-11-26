@@ -3820,5 +3820,23 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-11-19T21:58:58.187Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-why-your-financial-goals-feel-stuck-and-how-to-see-real/",
+    "target": "https://www.investopedia.com/terms/f/financial-dashboard.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-26T22:50:10.276Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-por-que-tus-metas-financieras-parecen-estancadas-y-como-ver/",
+    "target": "https://www.investopedia.com/terms/f/financial-dashboard.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-26T22:50:10.398Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/por-que-suas-metas-financeiras-parecem-estar-paradas-e-como/",
+    "target": "https://www.investopedia.com/terms/f/financial-dashboard.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-26T22:50:10.500Z"
   }
 ]
