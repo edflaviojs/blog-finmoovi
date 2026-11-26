@@ -1,0 +1,213 @@
+{
+  "slug": "kw-3-erros-que-custam-r-200-na-conta-de-agua",
+  "term": "3 erros que custam R$200 na conta de água",
+  "category": "mindset",
+  "keyword": "conta",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto da sua conta de água vai embora por *três errinhos de casa*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto da sua conta de água vai embora por três errinhos de casa? Duzentos reais por mês saem do seu bolso, e você nem vê.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "água",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "statement",
+            "text": "3 errinhos de casa"
+          }
+        },
+        {
+          "anchor": "Duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200/mês"
+          },
+          "sfx": "boom"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Porque são coisas de todo dia. Torneira aberta enquanto escova os dentes. Máquina ligada com pouca roupa. Chuveiro elétrico ligado sem timer.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Torneira",
+          "visual": {
+            "type": "statement",
+            "text": "Torneira aberta"
+          }
+        },
+        {
+          "anchor": "Máquina",
+          "visual": {
+            "type": "statement",
+            "text": "Máquina quase vazia"
+          }
+        },
+        {
+          "anchor": "Chuveiro",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu somei. Torneira, cinquenta reais. Máquina, sessenta. Chuveiro, noventa. Dá duzentos por mês, dois mil e quatrocentos no ano.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Soma dos três gastos: torneira, máquina e chuveiro"
+          }
+        },
+        {
+          "anchor": "noventa",
+          "visual": {
+            "type": "number",
+            "text": "R$ 90"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.400 por ano"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e o chuveiro ficou em primeiro, noventa reais. Aí fechei a torneira, enchi a máquina e pus timer.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Chuveiro em primeiro lugar nos gastos: R$ 90"
+          }
+        },
+        {
+          "anchor": "fechei",
+          "visual": {
+            "type": "statement",
+            "text": "Três ajustes simples"
+          }
+        },
+        {
+          "anchor": "timer",
+          "visual": {
+            "type": "icon",
+            "icon": "hourglass"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto sai da sua conta de água? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto escorre por mês?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Três errinhos de casa levam duzentos reais por mês da sua conta. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200/mês"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde seu dinheiro escorre",
+    "target": "app"
+  },
+  "totalDurationSec": 48.5
+}
