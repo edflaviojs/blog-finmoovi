@@ -6175,6 +6175,21 @@
     }
   },
   {
+    "file": "en-why-your-financial-goals-feel-stuck-and-how-to-see-real.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-withdrawal.md",
     "dir": "glossario",
     "severity": 0,
@@ -10796,6 +10811,21 @@
   },
   {
     "file": "es-por-que-sigues-olvidando-la-fecha-de-vencimiento-de-tus.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-por-que-tus-metas-financieras-parecen-estancadas-y-como-ver.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
