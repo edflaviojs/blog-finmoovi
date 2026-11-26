@@ -19,7 +19,7 @@ seo:
   keywords: ["metas financeiras","acompanhamento de metas","relatórios inteligentes","FinMoovi","planejamento financeiro","controle de gastos","progresso visual","metas","progresso","acompanhamento","relatórios","finmoovi","finanças pessoais"]
 ---
 
-Você já sentiu que definiu aquele objetivo de juntar dinheiro para a entrada de um carro, mas ao abrir a planilha ou o caderninho de anotações parece que nada mudou? Maria, assim como muita gente, anotou a meta de economizar o equivalente a duas vezes o aluguel mensal em 12 meses, mas a cada fim de semana a sensação é a mesma: “onde foi todo esse dinheiro?”. Essa falta de clareza gera ansiedade, adia decisões e faz o sonho parecer cada vez mais distante.
+Você já sentiu que definiu aquele objetivo de juntar dinheiro para a entrada de um carro, mas ao abrir a planilha ou o caderninho de anotações parece que nada mudou? Maria, assim como muita gente, anotou a meta de economizar o equivalente a duas vezes o [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) mensal em 12 meses, mas a cada fim de semana a sensação é a mesma: “onde foi todo esse dinheiro?”. Essa falta de clareza gera ansiedade, adia decisões e faz o sonho parecer cada vez mais distante.
 
 A raiz do problema não está na falta de disciplina, e sim na ausência de um termômetro que mostre, em tempo real, se o ritmo está adequado. Sem um feedback visual, a gente continua gastando no dia a dia como se o objetivo fosse só uma ideia distante. O que falta é um relatório que traduza cada centavo guardado ou gasto em uma barra de progresso fácil de entender.
 
@@ -53,7 +53,7 @@ Essas informações aparecem em gráficos de barra e linha, fáceis de entender 
 1. **Abra o FinMoovi e vá em “Metas”.** Clique em “Nova meta” e descreva “Entrada do carro”. Defina o prazo de 12 meses e o valor alvo (equivalente a duas vezes o aluguel).
 2. **Ative a captura por voz.** Diga “Deposito 300” toda vez que transferir dinheiro para a conta de reserva. O app registra automaticamente.
 3. **Tire foto das notas de compra** que não são essenciais (por exemplo, um jantar fora) e marque como “corte de gasto”. O algoritmo classifica e subtrai do saldo disponível para a meta.
-4. **Confira o relatório semanal** na aba “Insights”. Veja o gráfico de progresso e a recomendação de ajuste (ex.: “reduza 1 refeição fora por semana”).
+4. **Confira o relatório semanal** na aba “Insights”. Veja o [gráfico](/glossario/grafico) de progresso e a recomendação de ajuste (ex.: “reduza 1 refeição fora por semana”).
 5. **Ajuste o orçamento**: Se o alerta indicar atraso, vá em “Orçamento mensal”, reduza a categoria “Lazer” e aumente a categoria “Reserva de carro”.
 
 Com esses cinco minutos, Maria tem a visão completa do que está avançando e do que precisa mudar, tudo sem abrir uma única planilha.
@@ -75,15 +75,15 @@ Com esses cinco minutos, Maria tem a visão completa do que está avançando e d
 ## Dados que reforçam a importância do acompanhamento
 
 - **Investopedia** aponta que o uso de dashboards financeiros aumenta a taxa de cumprimento de metas em até 25 % porque transforma números abstratos em visualizações concretas.
-- **World Bank** destaca que a inclusão digital nas finanças pessoais reduz a volatilidade de gastos inesperados em 18 % quando há feedback semanal.
+- **World Bank** destaca que a inclusão digital nas [finanças](/glossario/financas) pessoais reduz a [volatilidade](/glossario/volatilidade) de gastos inesperados em 18 % quando há feedback semanal.
 
 Esses números confirmam que a simples presença de um relatório inteligente pode mudar o comportamento financeiro de forma mensurável.
 
 ## Dicas rápidas para potencializar o uso dos relatórios
 
 1. **Defina metas intermediárias** – além da meta final, crie “mini‑metas” de 3 meses. O relatório mostrará a performance em cada etapa.
-2. **Use a função multimoeda** se receber parte da renda em outra moeda (ex.: salário em dólares). O app converte automaticamente, mantendo o progresso real.
-3. **Aproveite o modo offline**: ao viajar, capture notas de gasto sem internet; ao reconectar, o app sincroniza e atualiza o relatório.
+2. **Use a função multimoeda** se receber parte da renda em outra [moeda](/glossario/moeda) (ex.: salário em dólares). O app converte automaticamente, mantendo o progresso real.
+3. **Aproveite o [modo offline](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: ao viajar, capture notas de gasto sem internet; ao reconectar, o app sincroniza e atualiza o relatório.
 4. **Compartilhe o progresso** – o FinMoovi permite gerar um PDF resumido para mostrar ao parceiro ou ao coach financeiro, criando responsabilidade mútua.
 
 ![Dicas rápidas para potencializar o uso dos relatórios](/images/posts/por-que-suas-metas-financeiras-parecem-estar-paradas-e-como-6.webp)
@@ -93,7 +93,7 @@ Esses números confirmam que a simples presença de um relatório inteligente po
 ## Por que o FinMoovi se destaca entre os apps de finanças
 
 - **Captura por voz**: nada de digitar valores; basta falar.
-- **Categorização automática com IA**: menos tempo de organização manual.
+- **[Categorização automática](/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas) com IA**: menos tempo de organização manual.
 - **Relatórios semanais personalizados**: não são genéricos, são calibrados para cada meta.
 - **Interface visual**: gráficos de barra, linha e pizza que dão “paz mental” ao usuário.
 
@@ -116,7 +116,7 @@ Ele usa o modo offline para armazenar fotos e gravações de voz localmente; ao 
 Sim, o FinMoovi utiliza criptografia de ponta a ponta e segue padrões internacionais de segurança, como o GDPR e a ISO 27001.
 
 ### Posso usar o app se recebo em diferentes moedas?
-Claro. O recurso multimoeda converte valores em tempo real usando taxas de câmbio de fontes confiáveis como a European Central Bank.
+Claro. O recurso multimoeda converte valores em tempo real usando taxas de [câmbio](/glossario/cambio) de fontes confiáveis como a European Central Bank.
 
 ### Os relatórios são personalizáveis?
 Sim, você pode escolher a frequência (semanal, quinzenal) e os indicadores que deseja acompanhar, como % da meta, ritmo necessário e categorias de gasto.

@@ -33,7 +33,7 @@ Constant feedback makes all the difference.
 
 ## How FinMoovi Brings Clarity with Smart Reports
 
-FinMoovi combines automatic expense capture (by snapping a receipt photo or using a voice command) with an AI engine that generates weekly reports. In Maria’s case:
+FinMoovi combines automatic [expense](/en/glossario/en-expense) capture (by snapping a receipt photo or using a voice command) with an AI engine that generates weekly reports. In Maria’s case:
 
 ![FinMoovi shows clear progress with smart reports](/images/posts/por-que-suas-metas-financeiras-parecem-estar-paradas-e-como-2.webp)
 
@@ -49,9 +49,9 @@ These numbers appear in bar and line charts that can be understood in a few seco
 ## Practical 5‑Minute Walk‑through Inside the App
 
 1. **Open FinMoovi and go to “Goals.”** Tap “New goal” and type “Car down‑payment.” Set the deadline to 12 months and the target amount (about twice the monthly rent, roughly **$2,000**).  
-2. **Enable voice capture.** Say “Deposit 300” each time you transfer money to your savings account. The app logs it automatically.  
+2. **Enable [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end).** Say “Deposit 300” each time you transfer money to your [savings](/en/glossario/en-savings) account. The app logs it automatically.  
 3. **Snap photos of non‑essential purchases** (e.g., a dinner out) and tag them as “spending cut.” The algorithm classifies them and subtracts the amount from the goal’s available balance.  
-4. **Check the weekly report** in the “Insights” tab. View the progress chart and the adjustment suggestion (e.g., “skip one restaurant meal per week”).  
+4. **Check the weekly report** in the “Insights” tab. View the progress [chart](/en/glossario/en-chart) and the adjustment suggestion (e.g., “skip one restaurant meal per week”).  
 5. **Adjust your budget**: If an alert shows you’re falling behind, go to “Monthly budget,” lower the “Leisure” category, and raise the “Car reserve” category.
 
 In just five minutes, Maria gets a complete view of what’s moving forward and what needs tweaking—without opening a single spreadsheet.
@@ -71,14 +71,14 @@ In just five minutes, Maria gets a complete view of what’s moving forward and 
 ## Numbers That Back Up the Need for Tracking
 
 - **Investopedia** reports that financial dashboards raise goal‑completion rates by up to **25 %** because they turn abstract numbers into concrete visuals.  
-- **World Bank** finds that digital personal‑finance tools cut unexpected‑spending volatility by **18 %** when users receive weekly feedback.
+- **World Bank** finds that digital personal‑[finance](/en/glossario/en-finance) tools cut unexpected‑spending [volatility](/en/glossario/en-volatility) by **18 %** when users receive weekly feedback.
 
 These figures confirm that a simple smart report can measurably shift financial behavior.
 
 ## Quick Tips to Get More Out of the Reports
 
 1. **Set intermediate milestones** – Besides the final goal, create 3‑month “mini‑goals.” The report will show performance for each stage.  
-2. **Use the multi‑currency feature** if part of your income comes in another currency (e.g., a salary paid in dollars). The app converts automatically, keeping your real progress intact.  
+2. **Use the [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) feature** if part of your income comes in another currency (e.g., a salary paid in dollars). The app converts automatically, keeping your real progress intact.  
 3. **Take advantage of offline mode**: While traveling, capture receipt photos without internet; the app syncs and updates the report once you’re back online.  
 4. **Share your progress** – FinMoovi can generate a concise PDF you can show a partner or a financial coach, fostering mutual accountability.
 
@@ -87,7 +87,7 @@ These figures confirm that a simple smart report can measurably shift financial 
 ## Why FinMoovi Stands Out Among Finance Apps
 
 - **Voice capture** – No typing; just speak the amount.  
-- **AI‑driven automatic categorization** – Saves you time on manual entry.  
+- **AI‑driven [automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances)** – Saves you time on manual entry.  
 - **Personalized weekly reports** – Tailored to each specific goal, not generic.  
 - **Visual‑first interface** – Bar, line, and pie charts that give you “peace of mind.”  
 
