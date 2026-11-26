@@ -3,6 +3,7 @@ title: "Why Your Financial Goals Feel Stuck and How to See Real Progress in 2026
 description: "Turn vague savings goals into visible progress with FinMoovi’s smart reports. Follow the step‑by‑step guide and start today."
 tickerHeadline: "Invisible goal, visible progress"
 image: "/images/posts/por-que-suas-metas-financeiras-parecem-estar-paradas-e-como.webp"
+imageAlt: "Smiling couple on couch holding tablet and phone, wearing knit sweater and striped shirt."
 category: "ferramentas"
 locale: "en"
 tags: ["financial goals","goal tracking","smart reports","FinMoovi","personal finance","expense control","visual progress","budgeting","tracking","reports","finance app","personal finance tips"]

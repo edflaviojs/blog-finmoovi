@@ -3,6 +3,7 @@ title: "Por que suas metas financeiras parecem estar paradas e como ver o avanç
 description: "Descubra como transformar metas vagas em progresso visível com relatórios inteligentes do FinMoovi. Veja o passo a passo e comece hoje."
 tickerHeadline: "Meta invisível, progresso à vista"
 image: "/images/posts/por-que-suas-metas-financeiras-parecem-estar-paradas-e-como.webp"
+imageAlt: "Casal sorridente sentado em sofá cinza, usando tablet e celular, com plantas ao fundo."
 category: "ferramentas"
 locale: "pt"
 tags: ["metas financeiras","acompanhamento de metas","relatórios inteligentes","FinMoovi","planejamento financeiro","controle de gastos","progresso visual","metas","progresso","acompanhamento","relatórios","finmoovi","finanças pessoais"]
