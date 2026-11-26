@@ -1,0 +1,118 @@
+{
+  "slug": "loop-primeiro-guardado-ninguem-fala",
+  "formato": "loop16",
+  "term": "O primeiro dinheiro guardado",
+  "category": "vida",
+  "keyword": "GUARDADO",
+  "valor": "R$ 300",
+  "situacao": "primeiro-guardado",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre sobrar dinheiro, mas é real.",
+      "durationSec": 3.51,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Sobrar dinheiro? É real"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "sobrar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Fechei o mês e sobraram trezentos reais Primeira vez.",
+      "durationSec": 3.51,
+      "shots": [
+        {
+          "anchor": "Fechei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "sobraram",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 300"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, eu e minha esposa guardamos tudo, como quem planta semente.",
+      "durationSec": 4.29,
+      "shots": [
+        {
+          "anchor": "esposa",
+          "visual": {
+            "type": "statement",
+            "text": "Guardamos, como semente"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardamos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Sobrar dinheiro é real, e ninguém fala disso por aí.",
+      "durationSec": 3.9,
+      "shots": [
+        {
+          "anchor": "Sobrar",
+          "visual": {
+            "type": "statement",
+            "text": "Sobrou. Comigo aconteceu."
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sobrar dinheiro? É real"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
