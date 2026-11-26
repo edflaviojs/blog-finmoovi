@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dentista-das-criancas-ninguem-fala",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "valor": "R$ 3.500",
+  "situacao": "dentista-das-criancas",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre dentista de criança, mas é real. Peguei o orçamento ontem.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do dentista"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dentista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aparelho da minha filha. Três mil e quinhentos reais Eu fiquei parado.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Aparelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "filha",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, comigo o buraco só ficava mais fundo.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Buraco cada vez mais fundo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "buraco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Dentista de criança, ninguém fala, mas é real.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "Dentista",
+          "visual": {
+            "type": "statement",
+            "text": "Mas é real"
+          }
+        },
+        {
+          "anchor": "criança",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do dentista"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

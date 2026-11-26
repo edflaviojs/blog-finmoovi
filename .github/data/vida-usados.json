@@ -1276,5 +1276,11 @@
     "gancho": "ninguem-fala",
     "turno": "manha",
     "em": "2026-11-26T14:10:02.138Z"
+  },
+  {
+    "situacao": "dentista-das-criancas",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-11-26T14:13:28.376Z"
   }
 ]
