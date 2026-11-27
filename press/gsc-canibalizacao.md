@@ -1,15 +1,15 @@
 # 🔀 Canibalização por query (GSC) — propostas de consolidação
 
 **Propriedade:** https://blog.finmoovi.com/
-**Período:** 2026-10-23 → 2026-11-20
-**Gerado em:** 2026-11-20T15:58:27.347Z
+**Período:** 2026-10-30 → 2026-11-27
+**Gerado em:** 2026-11-27T17:19:26.268Z
 
 > A automação já adicionou links de consolidação (post mais fraco → mais forte) onde seguro. A CONSOLIDAÇÃO destrutiva (mesclar/redirecionar/apagar) é decisão sua — abaixo, as sugestões.
 
-## "finmoovi.com alternatives" (en) — 548 impressões
+## "finmoovi.com alternatives" (en) — 552 impressões
 - 🏆 mais forte: `en-finmoovi-vs-manual-tracking-which-is-better-for-your-money.md` (0 cliques, pos 1.0)
 - ⚠️ mais fraco: `en-5-alternatives-to-organizze-in-2026-options-to-manage-your.md` (0 cliques, pos 2.5) → considere consolidar/redirecionar para o mais forte
-- ⚠️ mais fraco: `en-5-alternatives-to-mobills-in-2026.md` (0 cliques, pos 2.9) → considere consolidar/redirecionar para o mais forte
+- ⚠️ mais fraco: `en-5-alternatives-to-mobills-in-2026.md` (0 cliques, pos 2.8) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-7-alternatives-to-google-sheets-for-finance-updated-guide.md` (0 cliques, pos 2.9) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-finmoovi-vs-mobills-which-to-choose-in-2026.md` (0 cliques, pos 3.4) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-finmoovi-vs-organizze-which-is-better-in-2026.md` (0 cliques, pos 4.8) → considere consolidar/redirecionar para o mais forte
@@ -17,9 +17,9 @@
 - ⚠️ mais fraco: `en-7-best-personal-finance-apps-2026-complete-guide-to-organize.md` (0 cliques, pos 7.7) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-discover-a-practical-alternative-to-google-finance-for-2026.md` (0 cliques, pos 8.0) → considere consolidar/redirecionar para o mais forte
 
-## "finmoovi.com" (en) — 313 impressões
-- 🏆 mais forte: `en-finmoovi-vs-manual-tracking-which-is-better-for-your-money.md` (0 cliques, pos 6.5)
-- ⚠️ mais fraco: `en-5-alternatives-to-mobills-in-2026.md` (0 cliques, pos 6.8) → considere consolidar/redirecionar para o mais forte
+## "finmoovi.com" (en) — 315 impressões
+- 🏆 mais forte: `en-5-alternatives-to-mobills-in-2026.md` (0 cliques, pos 6.0)
+- ⚠️ mais fraco: `en-finmoovi-vs-manual-tracking-which-is-better-for-your-money.md` (0 cliques, pos 6.5) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-discover-a-simple-app-to-organize-your-finances-in-2026.md` (0 cliques, pos 7.0) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-finmoovi-vs-mobills-which-to-choose-in-2026.md` (0 cliques, pos 7.5) → considere consolidar/redirecionar para o mais forte
 - ⚠️ mais fraco: `en-recurring-expenses-understand-and-manage-them-easily-in-2026.md` (0 cliques, pos 7.5) → considere consolidar/redirecionar para o mais forte
@@ -45,6 +45,10 @@
 ## "what money app tells me what to do next 2026" (en) — 10 impressões
 - 🏆 mais forte: `en-7-best-personal-finance-apps-2026-complete-guide-to-organize.md` (0 cliques, pos 5.8)
 - ⚠️ mais fraco: `en-discover-a-simple-app-to-organize-your-finances-in-2026.md` (0 cliques, pos 7.4) → considere consolidar/redirecionar para o mais forte
+
+## "o que quer dizer saldo em conta" (pt) — 8 impressões
+- 🏆 mais forte: `entenda-o-saldo-pendente-e-como-regularizar-suas-contas.md` (0 cliques, pos 23.5)
+- ⚠️ mais fraco: `entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.md` (0 cliques, pos 33.7) → considere consolidar/redirecionar para o mais forte
 
 ## "switch from spreadsheet budgeting to intelligent finance software. 2026" (en) — 6 impressões
 - 🏆 mais forte: `en-why-switch-from-a-spreadsheet-to-an-app-in-2026-real.md` (0 cliques, pos 3.0)
