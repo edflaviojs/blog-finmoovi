@@ -1288,5 +1288,11 @@
     "gancho": "comeca-assim",
     "turno": "manha",
     "em": "2026-11-27T14:08:10.309Z"
+  },
+  {
+    "situacao": "mercado-subindo",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-11-27T14:11:13.619Z"
   }
 ]
