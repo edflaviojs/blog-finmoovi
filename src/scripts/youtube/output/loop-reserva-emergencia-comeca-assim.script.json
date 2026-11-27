@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reserva-emergencia-comeca-assim",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "valor": "R$ 600",
+  "situacao": "reserva-emergencia",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a ter sossego? Começa assim. Comigo tudo quebrou junto.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo quebrou junto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "sossego",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Passei a separar seiscentos reais todo mês.",
+      "durationSec": 2.6,
+      "shots": [
+        {
+          "anchor": "Passei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 600 todo mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sabe o que mudou? Meu dinheiro ficou guardadinho, igual guarda-chuva.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "mudou",
+          "visual": {
+            "type": "statement",
+            "text": "Meu guarda-chuva guardado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quando tudo quebra junto, lá em casa a gente tem sossego. Começa assim.",
+      "durationSec": 4.82,
+      "shots": [
+        {
+          "anchor": "quebra",
+          "visual": {
+            "type": "statement",
+            "text": "Sossego começa assim"
+          }
+        },
+        {
+          "anchor": "junto",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo quebrou junto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

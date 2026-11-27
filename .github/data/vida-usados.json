@@ -1282,5 +1282,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-11-26T14:13:28.376Z"
+  },
+  {
+    "situacao": "reserva-emergencia",
+    "gancho": "comeca-assim",
+    "turno": "manha",
+    "em": "2026-11-27T14:08:10.309Z"
   }
 ]
