@@ -1990,6 +1990,21 @@
     }
   },
   {
+    "file": "en-excel-vs-finance-apps-pros-and-cons-for-everyday-money.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-expense-category.md",
     "dir": "glossario",
     "severity": 0,
@@ -8981,6 +8996,21 @@
   },
   {
     "file": "es-evite-compras-por-impulso.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-excel-vs-apps-de-finanzas-pros-y-contras-para-el-dia-a-dia.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
