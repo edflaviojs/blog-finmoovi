@@ -3,6 +3,7 @@ title: "Excel vs Finance Apps: Pros and Cons for Everyday Money Management"
 description: "Find out when to use a spreadsheet or a finance app, compare benefits, and get a quick checklist to decide."
 tickerHeadline: "Spreadsheet or app?"
 image: "/images/posts/excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia.webp"
+imageAlt: "Four smiling people at a table reviewing documents with coffee."
 category: "ferramentas"
 locale: "en"
 tags: ["excel finance","finance apps","spreadsheet vs app","FinMoovi","expense automation","personal finance spreadsheet","excel vs finance app","budgeting spreadsheet"]

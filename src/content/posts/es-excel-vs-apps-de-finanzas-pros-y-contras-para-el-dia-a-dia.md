@@ -3,6 +3,7 @@ title: "Excel vs Apps de Finanzas: Pros y Contras para el Día a Día"
 description: "Descubre cuándo usar una hoja de cálculo o una app financiera, compara ventajas y obtén un checklist práctico."
 tickerHeadline: "¿Hoja o app? La decisión que cambia tu g"
 image: "/images/posts/excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia.webp"
+imageAlt: "Cuatro personas sonríen alrededor de una mesa blanca con documentos, tazas y vasos."
 category: "ferramentas"
 locale: "es"
 tags: ["excel finanzas","apps de control financiero","hoja vs app","FinMoovi","automatización de gastos","excel finanzas personales","excel vs app financiero","hoja excel gastos"]
