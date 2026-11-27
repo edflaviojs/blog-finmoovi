@@ -1,0 +1,227 @@
+{
+  "slug": "kw-sua-conta-de-luz-pode-cair-r-150-em-30-dias",
+  "term": "Sua conta de luz pode cair R$150 em 30 dias",
+  "category": "mindset",
+  "keyword": "conta",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Por que a sua conta de luz vem *cento e cinquenta reais mais cara* do que precisa?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "vela",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Por que a sua conta de luz vem cento e cinquenta reais mais cara do que precisa? Por causa de três hábitos que ninguém olha dentro de casa.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "vela"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 hábitos invisíveis"
+          }
+        },
+        {
+          "anchor": "dentro",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Começa na lâmpada antiga acesa o dia todo. Segue no carregador esquecido na tomada e no ventilador ligado de madrugada.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "lâmpada",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          }
+        },
+        {
+          "anchor": "carregador",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "ventilador",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cada uma dessas coisas gasta pouco. Só que juntas levam cento e cinquenta reais do seu bolso, todo mês.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "gasta",
+          "visual": {
+            "type": "statement",
+            "text": "Cada um gasta pouco"
+          }
+        },
+        {
+          "anchor": "juntas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "vela"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 150,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "todo",
+          "visual": {
+            "type": "statement",
+            "text": "Todo mês, sem perceber"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Botei minha conta de luz no FinMoovi e fui cortando. Troquei a lâmpada, tirei o carregador da tomada e pus timer no ventilador. A linha da luz foi caindo.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "minha",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Conta de luz cadastrada e a linha da luz caindo"
+          }
+        },
+        {
+          "anchor": "tirei",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "ventilador",
+          "visual": {
+            "type": "statement",
+            "text": "Corte a corte"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto cai a sua? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Sua luz vem cara por três hábitos que ninguém olha. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "cara",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "vela"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, perde"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto cai a sua conta de luz",
+    "target": "app"
+  },
+  "totalDurationSec": 48.1
+}
