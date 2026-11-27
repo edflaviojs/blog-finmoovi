@@ -6804,6 +6804,26 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-26"
+    },
+    "excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-27"
+    },
+    "excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-27"
+    },
+    "excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-27"
+    },
+    "excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-27"
     }
   },
   "corrigidas": {
@@ -7488,6 +7508,6 @@
       "motivo": "tem texto escrito (\"$100\")"
     }
   },
-  "totalAcervo": 1361,
-  "ultimaCorrida": "2026-11-26"
+  "totalAcervo": 1365,
+  "ultimaCorrida": "2026-11-27"
 }
