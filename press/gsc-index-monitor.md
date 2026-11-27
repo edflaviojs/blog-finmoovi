@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-26T18:08:16.914Z
+Gerado em: 2026-11-27T17:59:43.731Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **541/1229** URLs indexadas
-- **234** não indexadas
-- **454** com erro na inspeção
-- **229** página(s) de conteúdo fora do índice há ≥7 dias
+- **876/1232** URLs indexadas
+- **356** não indexadas
+- **0** com erro na inspeção
+- **352** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,9 +16,9 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 231
-- Discovered - currently not indexed: 1
-- URL is unknown to Google: 2
+- Crawled - currently not indexed: 350
+- Discovered - currently not indexed: 3
+- URL is unknown to Google: 3
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -43,7 +43,6 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/como-economizar-no-plano-de-celular-e-internet-em-2026/` — Crawled - currently not indexed (desde 2026-11-10)
 - `https://blog.finmoovi.com/posts/como-economizar-no-supermercado-em-2026-dicas-reais/` — Crawled - currently not indexed (desde 2026-10-27)
-- `https://blog.finmoovi.com/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto/` — Crawled - currently not indexed (desde 2026-11-08)
 - `https://blog.finmoovi.com/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de/` — Crawled - currently not indexed (desde 2026-11-09)
 - `https://blog.finmoovi.com/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026/` — Crawled - currently not indexed (desde 2026-11-17)
@@ -72,3 +71,4 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel/` — Crawled - currently not indexed (desde 2026-11-07)
 - `https://blog.finmoovi.com/posts/evite-compras-por-impulso/` — Crawled - currently not indexed (desde 2026-11-10)
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
+- `https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-julho-2026/` — Crawled - currently not indexed (desde 2026-11-14)
