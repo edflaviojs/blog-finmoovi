@@ -3298,5 +3298,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-planejar-suas-financas-para-2026-em-5-passos-simples",
+    "title": "Como planejar suas finanças para 2026 em 5 passos simples",
+    "url": "https://blog.finmoovi.com/posts/como-planejar-suas-financas-para-2026-em-5-passos-simples",
+    "submittedAt": "2026-11-27T23:04:31.128Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1946017937
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia",
+    "title": "Excel vs Apps de Finanças: Prós e Contras para o Dia a Dia",
+    "url": "https://blog.finmoovi.com/posts/excel-vs-apps-de-financas-pros-e-contras-para-o-dia-a-dia",
+    "submittedAt": "2026-11-27T23:04:31.511Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1946017942
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
