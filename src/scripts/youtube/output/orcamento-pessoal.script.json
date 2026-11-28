@@ -1,0 +1,236 @@
+{
+  "slug": "orcamento-pessoal",
+  "term": "Orçamento Pessoal",
+  "category": "basico",
+  "keyword": "Orçamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você tem um *orçamento* ou só torce pra o salário durar até o fim do mês?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "semaforo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você tem um orçamento ou só torce pra o salário durar até o fim do mês? Eu torcia. E todo mês ele sumia sem eu saber pra onde.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "orçamento",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "torcia",
+          "visual": {
+            "type": "statement",
+            "text": "Eu só torcia"
+          }
+        },
+        {
+          "anchor": "sumia",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sumia no que ninguém anota. O café da tarde, o delivery de sexta, a corrida de aplicativo.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "anota",
+          "visual": {
+            "type": "statement",
+            "text": "O gasto que ninguém anota"
+          }
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "corrida",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu somei esses três de verdade. Deu novecentos reais num mês. E eu jurava que não gastava nada.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 900,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "jurava",
+          "visual": {
+            "type": "statement",
+            "text": "Eu jurava: nada"
+          }
+        },
+        {
+          "anchor": "nada",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Joguei os três no FinMoovi e ele marcou o delivery em vermelho, em primeiro lugar, bem na minha cara.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Delivery marcado em vermelho no topo dos gastos"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          }
+        },
+        {
+          "anchor": "minha",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "E no seu, quanto será que deu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "será",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quem não tem orçamento só torce, e torcer não paga conta. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "torce",
+          "visual": {
+            "type": "statement",
+            "text": "Torcer não paga conta"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto você gasta sem ver",
+    "target": "app"
+  },
+  "totalDurationSec": 43.8
+}
