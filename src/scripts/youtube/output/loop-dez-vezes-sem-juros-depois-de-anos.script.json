@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-depois-de-anos",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "valor": "R$ 780",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Comigo foi na fatura.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura me assustou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri o aplicativo. Setecentos e oitenta reais de parcelas, tudo junto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 780 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Parcelinha sem juros parece leve. Junta tudo, vira pedra na mochila.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Parcelinha",
+          "visual": {
+            "type": "statement",
+            "text": "Vira pedra na mochila"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "juros",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje olho a fatura antes de parcelar. Isso eu descobri.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Olho antes de parcelar"
+          }
+        },
+        {
+          "anchor": "parcelar",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura me assustou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

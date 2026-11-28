@@ -1300,5 +1300,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-11-28T13:24:53.645Z"
+  },
+  {
+    "situacao": "dez-vezes-sem-juros",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-11-28T13:29:28.288Z"
   }
 ]
