@@ -1,0 +1,118 @@
+{
+  "slug": "loop-decimo-terceiro-depois-de-anos",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "valor": "R$ 2.400",
+  "situacao": "decimo-terceiro",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Meu décimo terceiro some.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "O décimo terceiro some"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, dois mil e quatrocentos reais tinham virado fumaça.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.400 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora separo uma parte no dia que cai, bem quietinha.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Hoje eu separo no dia"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parte",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Senão meu décimo terceiro some de novo, e eu descubro tarde.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Senão",
+          "visual": {
+            "type": "statement",
+            "text": "E ele some de novo?"
+          }
+        },
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "statement",
+            "text": "O décimo terceiro some"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
