@@ -3,6 +3,7 @@ title: "Cómo planificar tus finanzas para 2026 en 5 pasos simples"
 description: "Descubre cómo organizar tu dinero para el próximo año con FinMoovi y lograr tranquilidad financiera."
 tickerHeadline: "El plan que salva tu próximo año"
 image: "/images/posts/como-planejar-suas-financas-para-2026-em-5-passos-simples.webp"
+imageAlt: "Escritorio con monitores, portátiles, teclado y dos tazas de café."
 category: "orcamento"
 locale: "es"
 tags: ["planificación financiera 2026","organización de gastos","metas financieras","FinMoovi","control de gastos","presupuesto personal","planificación","año nuevo"]

@@ -3,6 +3,7 @@ title: "How to Plan Your Finances for 2026 in 5 Simple Steps"
 description: "Learn to organize your money for next year with FinMoovi and enjoy financial peace of mind."
 tickerHeadline: "A plan that saves your next year"
 image: "/images/posts/como-planejar-suas-financas-para-2026-em-5-passos-simples.webp"
+imageAlt: "Wooden desk holding monitors, laptop, keyboard, and two dark coffee mugs."
 category: "orcamento"
 locale: "en"
 tags: ["financial planning 2026","expense tracking","financial goals","FinMoovi","expense control","personal budget","budgeting","new year"]
